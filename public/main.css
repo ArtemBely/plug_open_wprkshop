@@ -1,5 +1,29 @@
 body {
-  background-color: pink;
-  color: white;
+  background-color: #E5E5E5;
+}
+.header {
+  position: relative;
+  top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 9%) 12% repeat(3, 10%) 40%;
+}
+.header_elements {
+  font-size: 22px;
+  color: #8D8D8D;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  margin: 0 55px;
+  min-width: 165px;
+}
+.active_header {
+  color: #CCCCCC;
+}
+#logo {
+  color: #2C2C2C;
+  font-size: 36px;
+  display: flex;
+  justify-content: left;
 }
 

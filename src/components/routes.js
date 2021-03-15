@@ -2,7 +2,7 @@ import Main from './Main';
 
 const routes = [
   {
-    path: '/',
+    path: ['/', '/work', '/contracts', '/finances', '/clients'],
     exact: true,
     component: Main
   }
