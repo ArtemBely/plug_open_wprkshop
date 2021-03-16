@@ -1,5 +1,24 @@
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url(/fonts/Manrope-Regular.eot);
+    src: url(/fonts/Manrope-Regular.eot?#iefix) format('embedded-opentype'),
+    url(/fonts/Manrope-Regular.woff) format('woff'),
+    url(/fonts/Manrope-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(/fonts/Montserrat-SemiBold.eot);
+    src: url(/fonts/Montserrat-SemiBold.eot?#iefix) format('embedded-opentype'),
+    url(/fonts/Montserrat-SemiBold.woff) format('woff'),
+    url(/fonts/Montserrat-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   background-color: #E5E5E5;
+  font-family: 'Manrope-Regular';
 }
 .header {
   position: relative;
@@ -25,5 +44,23 @@ body {
   font-size: 36px;
   display: flex;
   justify-content: left;
+}
+.title {
+  grid-column: 2 / 7;
+  position: relative;
+}
+#title1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat-SemiBold';
+}
+#title2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+  top: -30px;
 }
 
