@@ -13,7 +13,7 @@
       "@babel/plugin-proposal-object-rest-spread",
       "@babel/plugin-proposal-class-properties",
       [
-      "@babel/plugin-transform-runtime"
+        "@babel/plugin-transform-runtime"
       ]
     ]
   },
@@ -74,5 +74,13 @@
     "webpack": "^5.25.1",
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemBely/collab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArtemBely/collab/issues"
+  },
+  "homepage": "https://github.com/ArtemBely/collab#readme"
 }
