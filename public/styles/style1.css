@@ -63,3 +63,6 @@ body {
   position: relative;
   top: -30px;
 }
+.arrow {
+  width: 65px;
+}
