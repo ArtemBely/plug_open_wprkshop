@@ -74,5 +74,13 @@
     "webpack": "^5.26.2",
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemBely/collab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArtemBely/collab/issues"
+  },
+  "homepage": "https://github.com/ArtemBely/collab#readme"
 }

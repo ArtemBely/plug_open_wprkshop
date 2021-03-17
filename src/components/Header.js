@@ -12,6 +12,11 @@ class Header extends React.Component{
             <NavLink to='/finances' className='finances header_elements' activeClassName='active_header'>Финансы</NavLink>
           <NavLink to='/clients' className='clients header_elements' activeClassName='active_header'>Клиенты</NavLink>
         <div></div>
+        <div className="title">
+         <p id='title1'> заключение договоров</p>
+            <p id='title2'>Ваша подпись за один клик, вторая сторона подписывает также легко по ссылке,
+            шаблоны договоров, все документы разделены по папочкам и категориям</p>
+        </div>
       </div>
     )
   }
