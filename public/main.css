@@ -27,7 +27,7 @@ body {
   grid-template-columns: repeat(2, 9%) 12% repeat(3, 10%) 40%;
 }
 .header_elements {
-  font-size: 22px;
+  font-size: 19px;
   color: #8D8D8D;
   display: flex;
   justify-content: center;
@@ -44,6 +44,7 @@ body {
   font-size: 36px;
   display: flex;
   justify-content: left;
+  font-weight:700;
 }
 .title {
   grid-column: 2 / 7;
@@ -65,5 +66,22 @@ body {
 }
 .arrow {
   width: 65px;
+  opacity:0.5;
+}
+
+.wrap_order{
+	display:grid;
+	margin-top:50px;
+	grid-template-columns:7% 28.33333% 4% 28.33333% 4% 28.33333%;
+	justify-items:center;
+	align-items:center;
+}
+
+.text__order{
+	justify-self:center;
+	font-size:18px;
+	font-family: 'Manrope-SemiBold';
+	color:#2C2C2C;
+	line-height:25.2px;
 }
 

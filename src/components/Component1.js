@@ -7,14 +7,18 @@ import arrow from '../../public/images/next.svg';
 function Component1() {
   return (
     <div className='wrap_order'>
+	<div></div>
       <img src={order1} />
         <img src={arrow} className='arrow'/>
           <img src={order2} />
         <img src={arrow} className='arrow'/>
       <img src={order3} />
-        <p>Подписываете договор с помощью смс</p>
-          <p>Отправляете партнёру ссылку для подписи</p>
-      <p>Подписанный договор за 5 минут без бумажной волокиты</p>
+	  <p></p>
+        <p className='text__order'>Подписываете договор с помощью смс</p>
+		<p></p>
+        <p className='text__order'>Отправляете партнёру для подписи</p>
+		<p></p>
+		<p className='text__order'>Подписанный договор за 5 минут без бумажной волокиты</p>
     </div>
   )
 }
