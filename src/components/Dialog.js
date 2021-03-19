@@ -7,10 +7,10 @@ function Dialog() {
           <div className='message1'>
     		      <p className='mes__text1'>Посмотрите, распечатайте, подпишите, потом отсканируйте, пришлите. ОБЯЗАТЕЛЬНО ПЕЧАТАЙТЕ В ЦВЕТЕ!</p>
     	         </div>
-        	      <p className='mes__name1'>Любовь Геннадьевна</p>
+        	      <p className='mes__name1 mess1'>Любовь Геннадьевна</p>
         	       <div className='message2'>
         		    <p className='mes__text2'>Давайте лучше через коллаб</p>
-              <p className='mes__name2'>Константин</p>
+              <p className='mes__name2 mess2'>Константин</p>
     	    </div>
   	   <div></div>
     </div>

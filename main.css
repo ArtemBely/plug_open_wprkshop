@@ -227,17 +227,18 @@ body {
   position: relative;
   left: 100px;
   margin-top: 15px;
-  width: 290px;
-  height: 110px;
+  width: 300px;
+  height: 118px;
   background-color: #0669DD;
   border-radius: 30px 30px 0 30px;
+  padding: 0px 11px;
 }
 .dialog2_mes__text2 {
   font-size: 18px;
   color: #F6F6F6;
   font-weight: 400;
   line-height: 25px;
-  padding: 0px 4px;
+  padding: 13px 4px;
   text-align: center;
   justify-items: end;
 }
@@ -323,97 +324,6 @@ body {
 .mes__name1{grid-area:mes__name1}
 .mes__name2{grid-area:mes__name2}
 .mes__name3{grid-area:mes__name3}
-
-/*.dialog3{
-	position:relative;
-	margin-top:400px;
-	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows:150px 15px 120px 15px 120px 15px;
-	grid-row-gap:10px;
-	grid-template-areas:
-		". dialog3_message1 . ."
-		". mes__name1 . ."
-		". . dialog3_message2 . "
-		". . mes__name2 ."
-		". dialog3_message3 . ."
-		". mes__name3 . ."
-}
-
-.dialog3_message1{
-  position: relative;
-  left: 100px;
-  width: 328px;
-  height: 132px;
-  background-color: #5B5464;
-  border-radius: 30px 30px 30px 0;
-}
-
-.dialog3_message2{
-  position: relative;
-  left: 100px;
-  margin-top: 15px;
-  width: 290px;
-  height: 110px;
-  background-color: #0669DD;
-  border-radius: 30px 30px 0 30px;
-}
-
-.dialog3_message3{
-	margin-top: 25px;
-  position: relative;
-  left: 100px;
-  width: 328px;
-  height: 107px;
-  background-color: #5B5464;
-  border-radius: 30px 30px 30px 0;
-}
-
-.dialog3_mes__text1{
-	font-size:18px;
-	color:#F6F6F6;
-	line-height:30px;
-	padding:10px 43px 23px;
-	justify-items: start;
-	align-content:center;
-}
-
-.dialog3_mes__text2{
-  font-size: 18px;
-  color: #F6F6F6;
-  line-height: 25px;
-  padding:30px 0 32px 32px;
-  justify-items: end;
-  align-content:center;
-}
-
-.mes__name1{
-  position: relative;
-  left: 100px;
-  font-size:18px;
-  color:#808080;
-  line-height:25px;
-  justify-content: start;
-}
-
-.mes__name2{
-	margin-left:200px;
-	font-size:18px;
-	color:#808080;
-    position: relative;
-	color:#808080;
-	line-height:25px;
-    display: flex;
-  justify-content: end;
-}
-
-.mes__name3{
-  position: relative;
-  font-size:18px;
-  color:#808080;
-  line-height:25px;
-  justify-content: start;
-}*/
 
 .dialog3{
 	position:relative;
@@ -521,7 +431,6 @@ body {
 		"mes__name3"
 }
 
-
 .mes__name3{
   position: relative;
   top: -10px;
@@ -529,5 +438,29 @@ body {
   color:#808080;
   line-height:25px;
   justify-self: start;
+}
+
+.legal, .countries {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  top: 150px;
+}
+
+.mess1 {
+  top: 6px !important;
+  left: 94px !important;
+}
+.mess2 {
+  top: 54px !important;
+  left: 0px !important;
+}
+.mess3 {
+  top: -52px !important;
+  left: 97px !important;
+}
+.mess4 {
+  top: 50px !important;
+  left: 10px !important;
 }
 
