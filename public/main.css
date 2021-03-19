@@ -71,7 +71,7 @@ body {
 .wrap_order{
 	display:grid;
 	margin-top:50px;
-	grid-template-columns:7% 28.33333% 4% 28.33333% 4% 28.33333%;
+	grid-template-columns:3% 28.33333% 4% 28.33333% 4% 28.33333%;
 	justify-items:center;
 	align-items:center;
 }
@@ -102,6 +102,8 @@ body {
 }
 
 .message1{
+  position: relative;
+  left: 100px;
 	width:393px;
 	height:190px;
 	background-color:#5B5464;
@@ -109,8 +111,14 @@ body {
 }
 
 .message2{
+  position: relative;
+  left: 100px;
 	margin-top:15px;
+/*<<<<<<< HEAD*/
 	width:317px;
+/*=======*/
+	width:315px;
+/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	height:90px;
 	background-color:#0669DD;
 	border-radius:30px 30px 0 30px;
@@ -119,8 +127,14 @@ body {
 .mes__text1{
 	font-size:18px;
 	color:#F6F6F6;
+/*<<<<<<< HEAD*/
 	line-height:30px;
 	padding:22px;
+/*=======*/
+	font-weight:400;
+	line-height:30px;
+	padding:10px 43px 23px;
+/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	justify-items: start;
 	align-content:center;
 }
@@ -129,27 +143,387 @@ body {
 	font-size:18px;
 	color:#F6F6F6;
 	font-weight:400;
-	line-height:30px;
-	padding:15px;
-	text-align: right;
+	line-height:25px;
+	padding:10px 6px;
+	text-align: center;
 	justify-items: end;
 }
 
 .mes__name1{
+  position: relative;
+  left: 100px;
 	font-size:18px;
 	color:#808080;
+/*<<<<<<< HEAD
+=======*/
+	font-weight:400;
+/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	line-height:25px;
 	justify-content: start;
 }
 
 .mes__name2{
+/*<<<<<<< HEAD*/
 	margin-left:210px;
 	font-size:18px;
 	color:#808080;
+/*=======*/
+  position: relative;
+	font-size:18px;
+	color:#808080;
+	font-weight:400;
+/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	line-height:25px;
-	justify-content: end;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 45px;
+}
+.wrap_pictures {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  top: 200px;
+  width: 65%;
+  left: 21%;
+}
+#five_min {
+  color: #3C0D79;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+#without {
+  color: #5B5464;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.dialog2 {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  margin-top:425px;
+  grid-template-rows:200px 15px 100px 15px;
+  grid-template-areas:
+    ". dialog2_message1 . ."
+    ". mes__name1 . . "
+    ". . dialog2_message2 ."
+    ". . mes__name2 ."
+}
+
+.dialog2_message1{grid-area:dialog2_message1}
+.dialog2_message2{grid-area:dialog2_message2}
+
+.dialog2_message1 {
+  position: relative;
+  left: 100px;
+  width: 328px;
+  height: 132px;
+  background-color: #5B5464;
+  border-radius: 30px 30px 30px 0;
+}
+.dialog2_message2 {
+  position: relative;
+  left: 100px;
+  margin-top: 15px;
+  width: 290px;
+  height: 110px;
+  background-color: #0669DD;
+  border-radius: 30px 30px 0 30px;
+}
+.dialog2_mes__text2 {
+  font-size: 18px;
+  color: #F6F6F6;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 0px 4px;
+  text-align: center;
+  justify-items: end;
+}
+
+.wrap_animation {
+  position: relative;
+  top: 200px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(7, 1fr);
+  height: 900px;
+  width: 80%;
+  left: 12%;
+}
+.wrap_img1 {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 1 / 8;
+  overflow: hidden;
+  width: 1168px;
+  height: 892px;
+}
+.grey_square {
+  position: relative;
+  top: 26px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  width: 157px;
+  height: auto;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: #2C2C2C;
+  padding: 11px 34px;
+  transition: 0.3s;
+}
+.white_square {
+  background-color: #ffffff;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.all_images {
+  position: relative;
+  width: 1168px;
+  height: 937px;
+  transition: 0.2s;
+}
+.wrap_img2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  transition: 0.1s;
+}
+.slide1 {
+  transform: translateX(-1150px);
+  transition: 0.1s;
+}
+.slide2 {
+  transform: translateX(-2300px);
+  transition: 0.1s;
+}
+.slide3 {
+  transform: translateX(-3450px);
+  transition: 0.1s;
+}
+.slide4 {
+  transform: translateX(-4600px);
+  transition: 0.1s;
+}
+.slide5 {
+  transform: translateX(-5750px);
+  transition: 0.1s;
+}
+.slide6 {
+  transform: translateX(-6900px);
+  transition: 0.1s;
+}
+
+.dialog3_message1{grid-area:dialog3_message1}
+.dialog3_message2{grid-area:dialog3_message2}
+.dialog3_message3{grid-area:dialog3_message3}
+.mes__name1{grid-area:mes__name1}
+.mes__name2{grid-area:mes__name2}
+.mes__name3{grid-area:mes__name3}
+
+/*.dialog3{
+	position:relative;
+	margin-top:400px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:150px 15px 120px 15px 120px 15px;
+	grid-row-gap:10px;
+	grid-template-areas:
+		". dialog3_message1 . ."
+		". mes__name1 . ."
+		". . dialog3_message2 . "
+		". . mes__name2 ."
+		". dialog3_message3 . ."
+		". mes__name3 . ."
+}
+
+.dialog3_message1{
+  position: relative;
+  left: 100px;
+  width: 328px;
+  height: 132px;
+  background-color: #5B5464;
+  border-radius: 30px 30px 30px 0;
+}
+
+.dialog3_message2{
+  position: relative;
+  left: 100px;
+  margin-top: 15px;
+  width: 290px;
+  height: 110px;
+  background-color: #0669DD;
+  border-radius: 30px 30px 0 30px;
+}
+
+.dialog3_message3{
+	margin-top: 25px;
+  position: relative;
+  left: 100px;
+  width: 328px;
+  height: 107px;
+  background-color: #5B5464;
+  border-radius: 30px 30px 30px 0;
+}
+
+.dialog3_mes__text1{
+	font-size:18px;
+	color:#F6F6F6;
+	line-height:30px;
+	padding:10px 43px 23px;
+	justify-items: start;
+	align-content:center;
+}
+
+.dialog3_mes__text2{
+  font-size: 18px;
+  color: #F6F6F6;
+  line-height: 25px;
+  padding:30px 0 32px 32px;
+  justify-items: end;
+  align-content:center;
+}
+
+.mes__name1{
+  position: relative;
+  left: 100px;
+  font-size:18px;
+  color:#808080;
+  line-height:25px;
+  justify-content: start;
+}
+
+.mes__name2{
+	margin-left:200px;
+	font-size:18px;
+	color:#808080;
+    position: relative;
+	color:#808080;
+	line-height:25px;
+    display: flex;
+  justify-content: end;
+}
+
+.mes__name3{
+  position: relative;
+  font-size:18px;
+  color:#808080;
+  line-height:25px;
+  justify-content: start;
+}*/
+
+.dialog3{
+	position:relative;
+	margin-top:400px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:150px 15px 110px 15px 110px 15px;
+	grid-row-gap:10px;
+	grid-template-areas:
+		". dialog3_message1 . ."
+		". mes__name1 . ."
+		". . dialog3_message2 . "
+		". . mes__name2 ."
+		". dialog3_message3 . ."
+		". mes__name3 . ."
+}
+
+.dialog3_message1{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:150px 15px;
+	grid-row-gap:10px;
+	position: relative;
+  width: 328px;
+  height: 132px;
+  background-color: #5B5464;
+  border-radius: 30px 30px 30px 0;
+  grid-template-areas:
+		"dialog3_message1"
+		"mes__name1"
+}
+
+.dialog3_mes__text1{
+	font-size:18px;
+	color:#F6F6F6;
+	line-height:30px;
+	padding:10px 43px 23px;
+	justify-items: start;
+	align-content:center;
+	position: absolute;
+}
+
+.mes__name1{
+  position: relative;
+  font-size:18px;
+  color:#808080;
+  line-height:25px;
+  justify-self: start;
+}
+
+.dialog3_message2{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:110px 15px;
+	grid-row-gap:10px;
+  position: relative;
+  left: 100px;
+  margin-top: 15px;
+  width: 290px;
+  height: 110px;
+  background-color: #0669DD;
+  border-radius: 30px 30px 0 30px;
+  grid-template-areas:
+		"dialog3_message2"
+		"mes__name2"
+}
+
+.dialog3_mes__text2{
+  font-size: 18px;
+  color: #F6F6F6;
+  line-height: 25px;
+  padding:30px 0 32px 32px;
+  justify-items: end;
+  align-content:center;
+  position: absolute;
+}
+
+.mes__name2{
+	font-size:18px;
+	color:#808080;
+    position: relative;
+	color:#808080;
+	line-height:25px;
+  justify-self: end;
+}
+
+.dialog3_message3{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:110px 15px;
+	grid-row-gap:10px;
+	position: relative;
+	margin-top: 25px;
+  position: relative;
+  width: 328px;
+  height: 107px;
+  background-color: #5B5464;
+  border-radius: 30px 30px 30px 0;
+    grid-template-areas:
+		"dialog3_message3"
+		"mes__name3"
 }
 
 
+.mes__name3{
+  position: relative;
+  font-size:18px;
+  color:#808080;
+  line-height:25px;
+  justify-self: start;
+}
 
 
