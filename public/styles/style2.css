@@ -195,7 +195,7 @@
 	position: relative;
   width: 328px;
   height: 132px;
-  background-color: #5B5464;
+  background-color: #C4C4C4;
   border-radius: 30px 30px 30px 0;
   grid-template-areas:
 		"dialog3_message1"
@@ -204,7 +204,7 @@
 
 .dialog3_mes__text1{
 	font-size:18px;
-	color:#F6F6F6;
+	color:#1E1E1E;
 	line-height:30px;
 	padding:10px 43px 23px;
 	justify-items: start;
@@ -214,8 +214,9 @@
 
 .mes__name1{
   position: relative;
+  left:-100px;
   font-size:18px;
-  color:#808080;
+  color:#000000;
   line-height:25px;
   justify-self: start;
 }
@@ -249,9 +250,9 @@
 
 .mes__name2{
 	font-size:18px;
-	color:#808080;
+	color:#000000;
     position: relative;
-	color:#808080;
+	color:#000000;
 	line-height:25px;
   justify-self: end;
 }
@@ -266,7 +267,7 @@
   position: relative;
   width: 328px;
   height: 107px;
-  background-color: #5B5464;
+  background-color: #C4C4C4;
   border-radius: 30px 30px 30px 0;
     grid-template-areas:
 		"dialog3_message3"
@@ -277,7 +278,7 @@
 .mes__name3{
   position: relative;
   font-size:18px;
-  color:#808080;
+  color:#000000;
   line-height:25px;
   justify-self: start;
 }
