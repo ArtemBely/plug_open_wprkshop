@@ -80,7 +80,7 @@ body {
 	font-size:18px;
 	color:#2C2C2C;
 	line-height:25px;
-    text-align: center;
+  text-align: center;
 }
 
 .message1{grid-area:message1}
@@ -114,11 +114,7 @@ body {
   position: relative;
   left: 100px;
 	margin-top:15px;
-/*<<<<<<< HEAD*/
 	width:317px;
-/*=======*/
-	width:315px;
-/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	height:90px;
 	background-color:#0669DD;
 	border-radius:30px 30px 0 30px;
@@ -127,14 +123,11 @@ body {
 .mes__text1{
 	font-size:18px;
 	color:#F6F6F6;
-/*<<<<<<< HEAD*/
 	line-height:30px;
 	padding:22px;
-/*=======*/
 	font-weight:400;
 	line-height:30px;
 	padding:10px 43px 23px;
-/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	justify-items: start;
 	align-content:center;
 }
@@ -154,25 +147,18 @@ body {
   left: 100px;
 	font-size:18px;
 	color:#808080;
-/*<<<<<<< HEAD
-=======*/
 	font-weight:400;
-/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	line-height:25px;
 	justify-content: start;
 }
 
 .mes__name2{
-/*<<<<<<< HEAD*/
 	margin-left:210px;
 	font-size:18px;
 	color:#808080;
-/*=======*/
   position: relative;
 	font-size:18px;
-	color:#808080;
 	font-weight:400;
-/*>>>>>>> 71d582d7fb68e4a3eea7aea6eefe861ba25595c2*/
 	line-height:25px;
   display: flex;
   justify-content: flex-end;
@@ -358,11 +344,7 @@ body {
 
 .dialog3_mes__text1{
 	font-size:18px;
-/*<<<<<<< HEAD*/
 	color:#1E1E1E;
-/*=======*/
-	color: #1e1e1e;
-/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
 	line-height:30px;
 	padding:2px 43px 23px;
 	justify-items: start;
@@ -372,12 +354,9 @@ body {
 
 .mes__name1{
   position: relative;
-/*<<<<<<< HEAD*/
   left:-100px;
-/*=======*/
   top: -25px;
   left: 0;
-/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
   font-size:18px;
   color:#000000;
   line-height:25px;
@@ -413,17 +392,10 @@ body {
 
 .mes__name2{
 	font-size:18px;
-/*<<<<<<< HEAD*/
-	color:#000000;
-    position: relative;
-	color:#000000;
-/*=======*/
-	color:#808080;
   position: relative;
   top: -25px;
   left: -26px;
 	color:#808080;
-/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
 	line-height:25px;
   justify-self: end;
 }
@@ -564,32 +536,4 @@ body {
 	justify-self: end;
 }
 
-.payment__title{grid-area:payment__title}
-.payment__subtitle{grid-area:payment__subtitle}
-.payment_one{grid-area:payment_one}
-.payment_two{grid-area:payment_two}
-.payment_three{grid-area:payment_three}
-.payment_four{grid-area:payment_four}
 
-.payment{
-	margin-top:200px;
-	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows:90px 60px 150px;
-	grid-row-gap:20px;
-	position: relative;
-	grid-template-areas:
-		"payment__title"
-		"payment__subtitle"
-		"payment_one payment_two payment_three payment_four"
-}
-
-.payment__title{
-	grid-row: 2 / 5;
-	justify-content:center;
-}
-
-.payment__subtitle{
-	grid-row: 2 / 5;
-	justify-content:center;
-}

@@ -113,11 +113,7 @@
 
 .dialog3_mes__text1{
 	font-size:18px;
-<<<<<<< HEAD
 	color:#1E1E1E;
-=======
-	color: #1e1e1e;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
 	line-height:30px;
 	padding:2px 43px 23px;
 	justify-items: start;
@@ -127,12 +123,9 @@
 
 .mes__name1{
   position: relative;
-<<<<<<< HEAD
   left:-100px;
-=======
   top: -25px;
   left: 0;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
   font-size:18px;
   color:#000000;
   line-height:25px;
@@ -168,17 +161,10 @@
 
 .mes__name2{
 	font-size:18px;
-<<<<<<< HEAD
-	color:#000000;
-    position: relative;
-	color:#000000;
-=======
-	color:#808080;
   position: relative;
   top: -25px;
   left: -26px;
 	color:#808080;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
 	line-height:25px;
   justify-self: end;
 }
