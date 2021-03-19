@@ -1,0 +1,78 @@
+.wrap_animation {
+  position: relative;
+  top: 200px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(7, 1fr);
+  height: 900px;
+  width: 80%;
+  left: 12%;
+}
+.wrap_img1 {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 1 / 8;
+  overflow: hidden;
+  width: 1168px;
+  height: 892px;
+}
+.grey_square {
+  position: relative;
+  top: 26px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  width: 157px;
+  height: auto;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: #2C2C2C;
+  padding: 11px 34px;
+  transition: 0.3s;
+}
+.white_square {
+  background-color: #ffffff;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.all_images {
+  position: relative;
+  width: 1168px;
+  height: 937px;
+  transition: 0.2s;
+}
+.wrap_img2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  transition: 0.1s;
+}
+.slide1 {
+  transform: translateX(-1150px);
+  transition: 0.1s;
+}
+.slide2 {
+  transform: translateX(-2300px);
+  transition: 0.1s;
+}
+.slide3 {
+  transform: translateX(-3450px);
+  transition: 0.1s;
+}
+.slide4 {
+  transform: translateX(-4600px);
+  transition: 0.1s;
+}
+.slide5 {
+  transform: translateX(-5750px);
+  transition: 0.1s;
+}
+.slide6 {
+  transform: translateX(-6900px);
+  transition: 0.1s;
+}
+.dialog3 {
+  position: relative;
+  top: 400px;
+}
