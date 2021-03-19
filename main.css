@@ -358,11 +358,11 @@ body {
 
 .dialog3_mes__text1{
 	font-size:18px;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 	color:#1E1E1E;
-=======
+/*=======*/
 	color: #1e1e1e;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
+/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
 	line-height:30px;
 	padding:2px 43px 23px;
 	justify-items: start;
@@ -372,12 +372,12 @@ body {
 
 .mes__name1{
   position: relative;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
   left:-100px;
-=======
+/*=======*/
   top: -25px;
   left: 0;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
+/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
   font-size:18px;
   color:#000000;
   line-height:25px;
@@ -413,17 +413,17 @@ body {
 
 .mes__name2{
 	font-size:18px;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 	color:#000000;
     position: relative;
 	color:#000000;
-=======
+/*=======*/
 	color:#808080;
   position: relative;
   top: -25px;
   left: -26px;
 	color:#808080;
->>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8
+/*>>>>>>> 7ec8fb883dde2763e675a4f36895486b9fa8cca8*/
 	line-height:25px;
   justify-self: end;
 }
@@ -478,3 +478,118 @@ body {
   left: 10px !important;
 }
 
+.dialog4_message1{grid-area:dialog4_message1}
+.dialog4_message2{grid-area:dialog4_message2}
+.dialog4_mes__name1{grid-area:dialog4_mes__name1}
+.dialog4_mes__name2{grid-area:dialog4_mes__name2}
+
+.dialog4{
+	position:relative;
+	margin-top:200px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:90px 15px 110px 15px;
+	grid-row-gap:20px;
+	grid-template-areas:
+		". dialog4_message1 . ."
+		". dialog4_mes__name1 . ."
+		". . dialog4_message2 . "
+		". . dialog4_mes__name2 ."
+}
+
+.dialog4_message1{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:90px 15px;
+	grid-row-gap:10px;
+	position: relative;
+	width: 328px;
+	height: 77px;
+	background-color: #C4C4C4;
+	border-radius: 30px 30px 30px 0;
+	grid-template-areas:
+		"dialog4_message1"
+		"dialog4_mes__name1"
+}
+
+.dialog4_mes__text1{
+	font-size:18px;
+	color:#1E1E1E;
+	line-height:30px;
+	padding:10px 30px;
+	justify-items: start;
+	align-content:center;
+	position: absolute;
+}
+
+.dialog4_mes__name1{
+	position: relative;
+	margin-bottom:10px;
+	font-size:18px;
+	color:#000000;
+	line-height:30px;
+	justify-self: start;
+}
+
+.dialog4_message2{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:100px 15px;
+	grid-row-gap:10px;
+	position: relative;
+	width: 426px;
+	height: 100px;
+	background-color:#0669DD;
+	border-radius: 30px 30px 0 30px;
+	grid-template-areas:
+		"dialog4_message2"
+		"dialog4_mes__name2"
+}
+
+.dialog4_mes__text2{
+  font-size: 18px;
+  color: #F6F6F6;
+  line-height: 25px;
+  padding: 10px 36px;
+  justify-items: end;
+  align-content:center;
+  position: absolute;
+}
+
+.dialog4_mes__name2{
+	font-size:18px;
+	color:#000000;
+    position: relative;
+	line-height:25px;
+	justify-self: end;
+}
+
+.payment__title{grid-area:payment__title}
+.payment__subtitle{grid-area:payment__subtitle}
+.payment_one{grid-area:payment_one}
+.payment_two{grid-area:payment_two}
+.payment_three{grid-area:payment_three}
+.payment_four{grid-area:payment_four}
+
+.payment{
+	margin-top:200px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:90px 60px 150px;
+	grid-row-gap:20px;
+	position: relative;
+	grid-template-areas:
+		"payment__title"
+		"payment__subtitle"
+		"payment_one payment_two payment_three payment_four"
+}
+
+.payment__title{
+	grid-row: 2 / 5;
+	justify-content:center;
+}
+
+.payment__subtitle{
+	grid-row: 2 / 5;
+	justify-content:center;
+}

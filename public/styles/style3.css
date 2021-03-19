@@ -21,3 +21,90 @@
   top: 50px !important;
   left: 10px !important;
 }
+
+.dialog4_message1{grid-area:dialog4_message1}
+.dialog4_message2{grid-area:dialog4_message2}
+.dialog4_mes__name1{grid-area:dialog4_mes__name1}
+.dialog4_mes__name2{grid-area:dialog4_mes__name2}
+
+.dialog4{
+	position:relative;
+	margin-top:200px;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:90px 15px 110px 15px;
+	grid-row-gap:20px;
+	grid-template-areas:
+		". dialog4_message1 . ."
+		". dialog4_mes__name1 . ."
+		". . dialog4_message2 . "
+		". . dialog4_mes__name2 ."
+}
+
+.dialog4_message1{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:90px 15px;
+	grid-row-gap:10px;
+	position: relative;
+	width: 328px;
+	height: 77px;
+	background-color: #C4C4C4;
+	border-radius: 30px 30px 30px 0;
+	grid-template-areas:
+		"dialog4_message1"
+		"dialog4_mes__name1"
+}
+
+.dialog4_mes__text1{
+	font-size:18px;
+	color:#1E1E1E;
+	line-height:30px;
+	padding:10px 30px;
+	justify-items: start;
+	align-content:center;
+	position: absolute;
+}
+
+.dialog4_mes__name1{
+	position: relative;
+	margin-bottom:10px;
+	font-size:18px;
+	color:#000000;
+	line-height:30px;
+	justify-self: start;
+}
+
+.dialog4_message2{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:100px 15px;
+	grid-row-gap:10px;
+	position: relative;
+	width: 426px;
+	height: 100px;
+	background-color:#0669DD;
+	border-radius: 30px 30px 0 30px;
+	grid-template-areas:
+		"dialog4_message2"
+		"dialog4_mes__name2"
+}
+
+.dialog4_mes__text2{
+  font-size: 18px;
+  color: #F6F6F6;
+  line-height: 25px;
+  padding: 10px 36px;
+  justify-items: end;
+  align-content:center;
+  position: absolute;
+}
+
+.dialog4_mes__name2{
+	font-size:18px;
+	color:#000000;
+    position: relative;
+	line-height:25px;
+	justify-self: end;
+}
+
