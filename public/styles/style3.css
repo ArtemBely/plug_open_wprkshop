@@ -1,0 +1,23 @@
+.legal, .countries {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  top: 150px;
+}
+
+.mess1 {
+  top: 6px !important;
+  left: 94px !important;
+}
+.mess2 {
+  top: 54px !important;
+  left: 0px !important;
+}
+.mess3 {
+  top: -52px !important;
+  left: 97px !important;
+}
+.mess4 {
+  top: 50px !important;
+  left: 10px !important;
+}
