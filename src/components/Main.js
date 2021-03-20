@@ -10,6 +10,9 @@ import Legal from './Legal';
 import Countries from './Countries';
 import Dialog4 from './Dialog4';
 import Payment from './Payment';
+import Prices from './Prices';
+import Dialog5 from './Dialog5';
+import Myself from './Myself';
 
 class Main extends React.Component{
   render() {
@@ -26,6 +29,9 @@ class Main extends React.Component{
         <Countries />
         <Dialog4 />
         <Payment />
+        <Prices />
+        <Dialog5 />
+        <Myself />
       </div>
     )
   }
