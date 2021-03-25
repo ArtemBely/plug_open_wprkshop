@@ -113,11 +113,11 @@ body {
 .message2{
   position: relative;
   left: 100px;
-	margin-top:15px;
-	width:317px;
-	height:90px;
-	background-color:#0669DD;
-	border-radius:30px 30px 0 30px;
+  margin-top:15px;
+  width:317px;
+  height:90px;
+  background: linear-gradient(74.16deg, #0069E3 3.4%, #0500EF 99.01%);
+  border-radius:30px 30px 0 30px;
 }
 
 .mes__text1{
@@ -204,8 +204,8 @@ body {
 .dialog2_message1 {
   position: relative;
   left: 100px;
-  width: 328px;
-  height: 132px;
+  width: 343px;
+  height: 100px;
   background-color: #5B5464;
   border-radius: 30px 30px 30px 0;
 }
@@ -215,7 +215,7 @@ body {
   margin-top: 15px;
   width: 300px;
   height: 118px;
-  background-color: #0669DD;
+  background: linear-gradient(74.16deg, #0069E3 3.4%, #0500EF 99.01%);
   border-radius: 30px 30px 0 30px;
   padding: 0px 11px;
 }
@@ -228,40 +228,69 @@ body {
   text-align: center;
   justify-items: end;
 }
+#lyubov {
+  position: absolute;
+  top: 130px;
+  left: -100px;
+}
+#kostya {
+  position: absolute;
+  left: 355px;
+  top: 31px;
+}
 
 .wrap_animation {
   position: relative;
   top: 200px;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: repeat(7, 1fr);
   height: 900px;
   width: 80%;
-  left: 12%;
+  left: 11%;
+  grid-gap: 20px;
 }
 .wrap_img1 {
   position: relative;
   grid-column: 2 / 3;
   grid-row: 1 / 8;
   overflow: hidden;
-  width: 1168px;
+  width: 100%;
   height: 892px;
 }
 .grey_square {
   position: relative;
-  top: 26px;
+  top: -171px;
+  left: -4px;
   display: flex;
   align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  width: 157px;
+  width: 55%;
   height: auto;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   text-decoration: none;
   color: #2C2C2C;
   padding: 11px 34px;
-  transition: 0.3s;
+  grid-column: 1 / 2;
+}
+.opportunities {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  font-family: 'Montserrat-SemiBold';
+  position: relative;
+  top: -211px;
+}
+.your_click {
+  position: relative;
+  font-family: 'Manrope-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  top: -247px;
+  width: 400px;
 }
 .white_square {
   background-color: #ffffff;
@@ -373,7 +402,9 @@ body {
   margin-top: 15px;
   width: 290px;
   height: 90px;
-  background-color: #0669DD;
+  background: linear-gradient(
+74.16deg
+, #0069E3 3.4%, #0500EF 99.01%);
   border-radius: 30px 30px 0 30px;
   grid-template-areas:
 		"dialog3_message2"
@@ -442,7 +473,7 @@ body {
   left: 0px !important;
 }
 .mess3 {
-  top: -65px !important;
+  top: -95px !important;
   left: 97px !important;
 }
 .mess4 {
@@ -511,7 +542,9 @@ body {
 	position: relative;
 	width: 426px;
 	height: 100px;
-	background-color:#0669DD;
+	background: linear-gradient(
+74.16deg
+, #0069E3 3.4%, #0500EF 99.01%);
 	border-radius: 30px 30px 0 30px;
 	grid-template-areas:
 		"dialog4_message2"
@@ -629,6 +662,16 @@ body {
 #img3 {
   left: 58px;
   top: 28px;
+}
+#lyubov2 {
+  position: absolute;
+  top: 40px;
+  left: -100px;
+}
+#kostya2 {
+  position: absolute;
+  left: 355px;
+  top: 59px;
 }
 
 .myself {

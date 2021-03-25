@@ -183,6 +183,8 @@ goAway7 = () => {
   render() {
     return(
       <div className='wrap_animation'>
+        <p className='opportunities'>Возможности</p>
+        <p className='your_click'>Ваша подпись за один клик, вторая сторона подписывает также легко по ссылке, шаблоны договоров, все документы разделены по папочкам и категориям</p>
         <NavLink to='/all_documents' className='grey_square' activeClassName='white_square' onClick={this.goAway}>Все договора в одном месте</NavLink>
         <NavLink to='/one_click' className='grey_square' activeClassName='white_square' onClick={this.goAway2}>Один клик для подписи</NavLink>
         <NavLink to='/actual' className='grey_square' activeClassName='white_square' onClick={this.goAway3}>Актуальный статус документа</NavLink>
