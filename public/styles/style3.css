@@ -1,6 +1,6 @@
 .legal, .countries {
   position: relative;
-  width: 100%;
+  width: 1290px;
   height: 800px;
   top: 150px;
 }
@@ -120,6 +120,7 @@
   top: 200px;
   width: 100%;
   height: 800px;
+  width: 1290px;
 }
 .dialog5{
 	position:relative;

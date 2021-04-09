@@ -20,8 +20,14 @@ body {
   background-color: #E5E5E5;
   font-family: 'Manrope-Regular';
 }
+.wrap_header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .header {
   position: relative;
+  width: 1290px;
   top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 9%) 12% repeat(3, 10%) 40%;
@@ -35,6 +41,8 @@ body {
   border-bottom: 1px solid;
   margin: 0 55px;
   min-width: 165px;
+  position: relative;
+  left: 252px;
 }
 .active_header {
   color: #CCCCCC;
@@ -45,9 +53,11 @@ body {
   display: flex;
   justify-content: left;
   font-weight:700;
+  position: relative;
+  left: -115px;
 }
 .title {
-  grid-column: 2 / 7;
+  grid-column: 1 / 6;
   position: relative;
 }
 #title1 {
@@ -68,12 +78,19 @@ body {
   width: 65px;
   opacity:0.5;
 }
+.wrap2_order {
+  display: flex;
+  justify-content: center;
+}
 .wrap_order{
-	display:grid;
-	margin-top:50px;
-	grid-template-columns:3% 28.33333% 4% 28.33333% 4% 28.33333%;
-	justify-items:center;
-	align-items:center;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 0% 28.33333% 9% 27.33333% 9% 26.33333%;
+  justify-items: center;
+  align-items: center;
+  width: 1290px;
+  position: relative;
+  left: -21px;
 }
 .text__order{
 	justify-self:center;
@@ -88,11 +105,21 @@ body {
 .mes__name1{grid-area:mes__name1}
 .mes__name2{grid-area:mes__name2}
 
+.wrap_dialog, .wrap_dialog2, .wrap_dialog3,
+.wrap_dialog4, .wrap_dialog5, .wrap_prices,
+.wrap_animationMain, .wrap_legal, .wrap_countries,
+.wrap_myself {
+  display: flex;
+  justify-content: center;
+}
 .dialog{
+  width: 1290px;
+  position: relative;
+  left: -112px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	grid-row-gap: 10px;
-	margin-top:140px;
+	margin-top:68px;
 	grid-template-rows:200px 15px 100px 15px;
 	grid-template-areas:
 		". message1 . ."
@@ -165,13 +192,17 @@ body {
   position: relative;
   top: 45px;
 }
+.wrap_picturesMain {
+  display: flex;
+  justify-content: center;
+}
 .wrap_pictures {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   top: 200px;
-  width: 65%;
-  left: 21%;
+  width: 1290px;
+  left: 21px;
 }
 #five_min {
   color: #3C0D79;
@@ -186,10 +217,13 @@ body {
   line-height: 50px;
 }
 .dialog2 {
+  width: 1290px;
+  position: relative;
+  left: -100px;
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
   grid-row-gap: 10px;
-  margin-top:425px;
+  margin-top:325px;
   grid-template-rows:200px 15px 100px 15px;
   grid-template-areas:
     ". dialog2_message1 . ."
@@ -212,7 +246,7 @@ body {
 .dialog2_message2 {
   position: relative;
   left: 100px;
-  margin-top: 15px;
+  margin-top: -73px;
   width: 300px;
   height: 118px;
   background: linear-gradient(74.16deg, #0069E3 3.4%, #0500EF 99.01%);
@@ -246,8 +280,7 @@ body {
   grid-template-columns: 40% 60%;
   grid-template-rows: repeat(7, 1fr);
   height: 900px;
-  width: 80%;
-  left: 11%;
+  width: 1290px;
   grid-gap: 20px;
 }
 .wrap_img1 {
@@ -341,6 +374,7 @@ body {
 .mes__name3{grid-area:mes__name3}
 
 .dialog3{
+  width: 1290px;
 	position:relative;
 	margin-top:400px;
 	display:grid;
@@ -459,7 +493,7 @@ body {
 
 .legal, .countries {
   position: relative;
-  width: 100%;
+  width: 1290px;
   height: 800px;
   top: 150px;
 }
@@ -579,6 +613,7 @@ body {
   top: 200px;
   width: 100%;
   height: 800px;
+  width: 1290px;
 }
 .dialog5{
 	position:relative;
@@ -676,9 +711,11 @@ body {
 
 .myself {
   position: relative;
+  left: -155px;
   top: 350px;
   display: flex;
   justify-content: center;
+  width: 1290px;
 }
 .inside_myself {
   position: relative;
@@ -699,7 +736,7 @@ body {
   width: 130px;
   position: relative;
   top: 140px;
-  left: -130px;
+  left: 120px;
 }
 .myself .inside_myself .purple:nth-child(2) {
   grid-column: 2 / 3;
@@ -723,13 +760,13 @@ body {
   width: 150px;
   position: relative;
   top: 30px;
-  left: 60px;
+  left: 0;
 }
 .myself .inside_myself .common_myself:nth-child(4) {
   grid-column: 4 / 5;
   position: relative;
   top: -90px;
-  left: 45px;
+  left: 310px;
 }
 .myself .inside_myself .common_myself:nth-child(5) {
   grid-column: 1 / 2;
@@ -738,7 +775,7 @@ body {
   justify-self: center;
   align-items: center;
   position: relative;
-  left: 85px;
+  left: 25px;
   top: 35px;
 }
 .myself .inside_myself .purple:nth-child(6) {
@@ -756,14 +793,14 @@ body {
   width: 130px;
   position: relative;
   top: -40px;
-  left: -125px;
+  left: 120px;
 }
 .myself .inside_myself .common_myself:nth-child(8) {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
   position: relative;
   top: -70px;
-  left: 46px;
+  left: 310px;
 }
 .myself .inside_myself .common_myself:nth-child(9) {
   grid-column: 1 / 2;
@@ -772,7 +809,7 @@ body {
   justify-self: center;
   align-items: center;
   position: relative;
-  left: 85px;
+  left: 25px;
   top: -25px;
 }
 .myself .inside_myself .purple:nth-child(10) {
@@ -792,7 +829,7 @@ body {
   justify-self: center;
   align-items: center;
   top: -67px;
-  left: 86px;
+  left: 25px;
 }
 .myself .inside_myself .purple:nth-child(12) {
   grid-column: 2 / 3;
@@ -809,13 +846,30 @@ body {
   top: -35px;
   grid-column: 3 / 5;
   grid-row: 4 / 5;
-  left: -137px;
+  left: -19px;
 }
 .myself .inside_myself .common_myself:nth-child(14) {
   position: relative;
   grid-column: 4 / 5;
   grid-row: 4 / 5;
   top: -75px;
-  left: 46px;
+  left: 310px;
+}
+.reg_bottom {
+  font-size: 19px;
+  color: #8D8D8D;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  margin: 0 55px;
+  min-width: 165px;
+  width: 165px;
+  position: relative;
+  left: 139px;
+}
+.wrap_reg {
+  display: grid;
+  justify-content: center;
 }
 

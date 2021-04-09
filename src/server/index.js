@@ -9,10 +9,43 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import serialize from 'serialize-javascript';
 import validator from 'express-validator';
+import session from 'express-session';
+import mongoose from 'mongoose';
+import passport from 'passport';
+import flash from 'connect-flash';
+
+import signupRouter from './routers/signup';
 
 const app = express();
+const CONNECTION_URI = process.env.MONGODB_URI;
 const port = process.env.PORT || 5000;
 
+require('dotenv/config');
+
+mongoose.connect(
+  CONNECTION_URI || process.env.CONNECT,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+  },
+  () => {
+    console.log('Connection with database USERS completed');
+  }
+);
+
+/*
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = require('twilio')(accountSid, authToken);
+
+
+client.messages.create({
+  to: '79172653033',
+  from: '+447588664528',
+  body: 'Забей калик ежжи!'
+}).then((message) => console.log(message.sid));
+*/
 app.use(function(req, res, next) {
   res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
   res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
@@ -23,12 +56,22 @@ app.use(function(req, res, next) {
   next();
 });
 
+
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
+app.use(session({
+  secret: 'mysecret',
+  resave: false,
+  saveUnitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use('/signup', signupRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
@@ -65,7 +108,7 @@ app.get('*', (req, res, next) => {
   }).catch(next)
 });
 
-/*
+
 app.use((error, req, res, next) => {
   res.status(error.status);
 
@@ -75,12 +118,13 @@ app.use((error, req, res, next) => {
     stack: error.stack
   });
 });
-*/
 
+/*
 app.use((req, res, next) => {  //<-- заменить если появится непредвиденная ошибка
    const err = new Error ('Noooo');
      err.status = 404;
      next (err);
 });
+*/
 
-app.listen(8888, () => {console.log('connected!')});
+app.listen(8888, () => {console.log('Server started!')});
