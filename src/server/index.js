@@ -15,6 +15,7 @@ import passport from 'passport';
 import flash from 'connect-flash';
 
 import signupRouter from './routers/signup';
+import checkRouter from './routers/check';
 
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -30,7 +31,7 @@ mongoose.connect(
     useCreateIndex: true
   },
   () => {
-    console.log('Connection with database USERS completed');
+    console.log('Connection with database Users completed');
   }
 );
 
@@ -41,11 +42,12 @@ const client = require('twilio')(accountSid, authToken);
 
 
 client.messages.create({
-  to: '79172653033',
+  to: '+420775650705',
   from: '+447588664528',
   body: 'Забей калик ежжи!'
 }).then((message) => console.log(message.sid));
 */
+
 app.use(function(req, res, next) {
   res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
   res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
@@ -71,7 +73,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/signup', signupRouter);
+app.use('/signup_code_form_check', signupRouter);
+app.use('/check_the_code', checkRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
@@ -107,7 +110,6 @@ app.get('*', (req, res, next) => {
         return res.send(html);
   }).catch(next)
 });
-
 
 app.use((error, req, res, next) => {
   res.status(error.status);

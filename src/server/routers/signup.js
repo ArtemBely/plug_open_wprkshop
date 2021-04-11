@@ -6,22 +6,12 @@ import serialize from 'serialize-javascript';
 import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
 import User from '../models/user.js';
-
-/*
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
-
-client.messages.create({
-  to: '+420775650705',
-  from: '+447588664528',
-  body: 'SUCCESS!'
-}).then((message) => console.log(message.sid));
-//import client from 'twilio'(authToken, accountSid);
-*/
+import Code from '../../components/Code';
 
 const LocalStrategy = require('passport-local').Strategy;
 const router = express.Router();
+
+require('dotenv/config');
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);
@@ -34,11 +24,10 @@ passport.deserializeUser(function(id, done) {
 
 router.post('/', (req, res, done) => {
 
-  var { name, email, city, telephone, password } = req.body;
+  var { name, email, telephone, password } = req.body;
 
   req.checkBody('name', "Поле 'имя' должно быть заполнено").notEmpty();
   req.checkBody('email', 'Неправильный Email').isEmail();
-  req.checkBody('city', "Поле 'имя' должно быть заполнено").notEmpty();
   req.checkBody('telephone', 'Неверный телефонный номер').isLength({min: 11});
   req.checkBody('password', 'Минимально число символов - 5').isLength({min: 5});
   req.checkBody('confirm', 'Поля должны совпадать').equals(password);
@@ -62,25 +51,70 @@ router.post('/', (req, res, done) => {
     return done(null, false);
   }
 
+
+
 // интеграция twilio <--//
 
+const count = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+function getRandom(min, max) {
+  return (Math.floor(Math.random() * (max - min + 1)) + min)
+}
+let arr = [];
+while(arr.length < 6) {
+  arr.push(count[getRandom(0, 35)]);
+}
+const message = arr.join('');
+console.log(message);
+/*
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = require('twilio')(accountSid, authToken);
+client.messages.create({
+  to: '+420775650705',
+  from: '+447588664528',
+  body: message
+}).then((message) => console.log(message.sid));
+//import client from 'twilio'(authToken, accountSid);
+*/
 var newUser = new User({
   name: name,
   email: email,
-  city: city,
   telephone: telephone,
-  password: password
+  password: password,
+  code: message
 });
 
 User.createUser(newUser, function(err, user) {
     if (err) throw err;
     console.log(user);
 });
-    const success = true;
-    const cond = req.isAuthenticated();
-    const indicate = 'Вы успешно зарегестрировались и теперь можете войти в личный кабинет!';
-    res.send('success!');
+
+    //res.send(message);
+    const lay = renderToString(
+      <StaticRouter>
+         <Code />
+      </StaticRouter>
+    )
+    res.send(
+      `<!DOCTYPE html>
+          <html>
+              <head>
+                <title>Проверка кода</title>
+                     <link rel="stylesheet" type="text/css" href="main.css">
+                       <meta name="viewport" content="width=device-width, initial-scale=1">
+                         <script src='bundle.js' defer></script>
+                           <script>window.__INITIAL_STATE__ = ${serialize(email)}</script>
+                         </head>
+                       <body>
+                     <div id="app">
+                   ${lay}
+                </div>
+              </body>
+          </html>`
+        )
   });
 });
+
 
 export default router;

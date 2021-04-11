@@ -1,5 +1,6 @@
 import Main from './Main';
 import Registration from './Registration';
+import Code from './Code';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/registration',
     exact: true,
     component: Registration
+  },
+  {
+    path: '/signup_code_form_check',
+    exact: true,
+    component: Code
   }
 ]
 

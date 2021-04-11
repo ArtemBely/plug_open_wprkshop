@@ -205,7 +205,7 @@ goAway7 = () => {
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     )
   }
 }
