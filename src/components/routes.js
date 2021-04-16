@@ -1,6 +1,9 @@
 import Main from './Main';
 import Registration from './Registration';
 import Code from './Code';
+import Congrats from './Congrats';
+import Profile from './Profile';
+import Enter from './Enter';
 
 const routes = [
   {
@@ -18,6 +21,21 @@ const routes = [
     path: '/signup_code_form_check',
     exact: true,
     component: Code
+  },
+  {
+    path: '/check_the_code',
+    exact: true,
+    component: Congrats
+  },
+  {
+    path: '/profile',
+    exact: true,
+    component: Profile
+  },
+  {
+    path: '/enter',
+    exact: true,
+    component: Enter
   }
 ]
 

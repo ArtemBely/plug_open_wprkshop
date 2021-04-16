@@ -7,6 +7,7 @@ import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
 import User from '../models/user.js';
 import Code from '../../components/Code';
+import Registration from '../../components/Registration';
 
 const LocalStrategy = require('passport-local').Strategy;
 const router = express.Router();
@@ -116,5 +117,56 @@ User.createUser(newUser, function(err, user) {
   });
 });
 
+passport.use('local.signin', new LocalStrategy ({
+  usernameField: 'email',
+  passwordField: 'password',
+  passReqToCallback: true
+},
+ function(req, email, password, done) {
+
+  User.findOne({email: email}, function (err, user) {
+    if (err) {
+      console.log(err);
+      return done(err);
+    }
+
+      if (!user) {   // --> вызывает get запрос данной url
+       req.flash('errors', 'Не найдено пользователей. Возможно вы еще не зарегистрированы в нашем сервисе?');
+       return done(null, false);
+     }
+
+     if(user.code !== 'true') {
+       req.flash('wrongCode', 'Ваш аккаунт не был подтвержден смс, пожалуйста обратитеьс в службуподдержки');
+       return done(null, false);
+     }
+
+    User.comparePassword(password, user.password, function(err, isMatch) {
+      if (err) throw err;
+      if(isMatch) {
+        return done(null, user);
+      }
+      else {
+        req.flash('error', 'Неверный пароль');
+        return done(null, false)
+      }
+    })
+  });
+
+}));
+
+router.post('/signin',
+    passport.authenticate('local.signin', {
+    successRedirect: '/profile',
+    failureRedirect: '/enter',
+    passReqToCallback: true
+ })
+);
+
+function notLoggedIn(req, res) {
+  if(!req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect('/');
+}
 
 export default router;

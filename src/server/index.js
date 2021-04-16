@@ -16,6 +16,9 @@ import flash from 'connect-flash';
 
 import signupRouter from './routers/signup';
 import checkRouter from './routers/check';
+import profileRouter from './routers/profile';
+import enterRouter from './routers/enter';
+import regRouter from './routers/registration';
 
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -70,11 +73,15 @@ app.use(session({
   resave: false,
   saveUnitialized: false
 }));
+app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/signup_code_form_check', signupRouter);
 app.use('/check_the_code', checkRouter);
+app.use('/profile', profileRouter);
+app.use('/registration', regRouter);
+app.use('/enter', enterRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
@@ -110,7 +117,7 @@ app.get('*', (req, res, next) => {
         return res.send(html);
   }).catch(next)
 });
-
+/*
 app.use((error, req, res, next) => {
   res.status(error.status);
 
@@ -120,13 +127,13 @@ app.use((error, req, res, next) => {
     stack: error.stack
   });
 });
+*/
 
-/*
 app.use((req, res, next) => {  //<-- заменить если появится непредвиденная ошибка
    const err = new Error ('Noooo');
      err.status = 404;
      next (err);
 });
-*/
+
 
 app.listen(8888, () => {console.log('Server started!')});

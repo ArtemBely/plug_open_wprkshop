@@ -5,9 +5,34 @@ import serialize from 'serialize-javascript';
 import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
 import Congrats from '../../components/Congrats';
-import OneMoreTime from '../../components/OneMoreTime';
 
 const router = express.Router();
+
+  router.get('/', (req, res) => {
+    let nothing = 'nothing';
+    const congrats = renderToString(
+      <StaticRouter>
+         <Congrats />
+      </StaticRouter>
+    )
+    res.send(
+      `<!DOCTYPE html>
+          <html>
+              <head>
+                <title>Проверка кода</title>
+                     <link rel="stylesheet" type="text/css" href="main.css">
+                       <meta name="viewport" content="width=device-width, initial-scale=1">
+                         <script src='bundle.js' defer></script>
+                         <script>window.__INITIAL_DATA__ = ${serialize(nothing)}</script>
+                         </head>
+                       <body>
+                     <div id="app">
+                   ${congrats}
+                </div>
+              </body>
+          </html>`
+      );
+  });
 
   router.post('/', (req, res) => {
     const { manualCode, mail } = req.body;
@@ -17,6 +42,9 @@ const router = express.Router();
       }
       if(user) {
         if(user.code == manualCode) {
+          user.code = true;
+          user = user.save();
+          let right = 'right';
           const congrats = renderToString(
             <StaticRouter>
                <Congrats />
@@ -30,6 +58,7 @@ const router = express.Router();
                            <link rel="stylesheet" type="text/css" href="main.css">
                              <meta name="viewport" content="width=device-width, initial-scale=1">
                                <script src='bundle.js' defer></script>
+                               <script>window.__INITIAL_DATA__ = ${serialize(right)}</script>
                                </head>
                              <body>
                            <div id="app">
@@ -40,9 +69,10 @@ const router = express.Router();
               )
           }
           else {
+              let wrong = 'wrong';
               const failed = renderToString(
                 <StaticRouter>
-                   <OneMoreTime />
+                   <Congrats />
                 </StaticRouter>
               )
               res.send(
@@ -53,6 +83,7 @@ const router = express.Router();
                                <link rel="stylesheet" type="text/css" href="main.css">
                                  <meta name="viewport" content="width=device-width, initial-scale=1">
                                    <script src='bundle.js' defer></script>
+                                   <script>window.__INITIAL_DATA__ = ${serialize(wrong)}</script>
                                    </head>
                                  <body>
                                <div id="app">
