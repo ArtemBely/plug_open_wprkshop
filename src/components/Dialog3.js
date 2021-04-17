@@ -2,7 +2,8 @@ import React from 'react';
 
 function Dialog3() {
   return(
-  	<div className='dialog3'>
+    <div className='wrap_dialog3'>
+  	  <div className='dialog3'>
       	<div></div>
                 <div className='dialog3_message1'>
           		<p className='dialog3_mes__text1'>Действительно, так удобнее. Как же мы свои подписи будем ставить?</p>
@@ -19,6 +20,7 @@ function Dialog3() {
       			</div>
       	<div></div>
       </div>
+    </div>
   )
 }
 

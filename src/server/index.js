@@ -9,9 +9,47 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import serialize from 'serialize-javascript';
 import validator from 'express-validator';
+import session from 'express-session';
+import mongoose from 'mongoose';
+import passport from 'passport';
+import flash from 'connect-flash';
+
+import signupRouter from './routers/signup';
+import checkRouter from './routers/check';
+import profileRouter from './routers/profile';
+import enterRouter from './routers/enter';
+import regRouter from './routers/registration';
 
 const app = express();
+const CONNECTION_URI = process.env.MONGODB_URI;
 const port = process.env.PORT || 5000;
+
+require('dotenv/config');
+
+mongoose.connect(
+  CONNECTION_URI || process.env.CONNECT,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
+  },
+  () => {
+    console.log('Connection with database Users completed');
+  }
+);
+
+/*
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = require('twilio')(accountSid, authToken);
+
+
+client.messages.create({
+  to: '+420775650705',
+  from: '+447588664528',
+  body: 'Забей калик ежжи!'
+}).then((message) => console.log(message.sid));
+*/
 
 app.use(function(req, res, next) {
   res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
@@ -23,12 +61,27 @@ app.use(function(req, res, next) {
   next();
 });
 
+
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
+app.use(session({
+  secret: 'mysecret',
+  resave: false,
+  saveUnitialized: false
+}));
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use('/signup_code_form_check', signupRouter);
+app.use('/check_the_code', checkRouter);
+app.use('/profile', profileRouter);
+app.use('/registration', regRouter);
+app.use('/enter', enterRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
@@ -64,7 +117,6 @@ app.get('*', (req, res, next) => {
         return res.send(html);
   }).catch(next)
 });
-
 /*
 app.use((error, req, res, next) => {
   res.status(error.status);
@@ -83,4 +135,5 @@ app.use((req, res, next) => {  //<-- заменить если появится 
      next (err);
 });
 
-app.listen(8888, () => {console.log('connected!')});
+
+app.listen(8888, () => {console.log('Server started!')});

@@ -182,23 +182,27 @@ goAway7 = () => {
 
   render() {
     return(
-      <div className='wrap_animation'>
-        <NavLink to='/all_documents' className='grey_square' activeClassName='white_square' onClick={this.goAway}>Все договора в одном месте</NavLink>
-        <NavLink to='/one_click' className='grey_square' activeClassName='white_square' onClick={this.goAway2}>Один клик для подписи</NavLink>
-        <NavLink to='/actual' className='grey_square' activeClassName='white_square' onClick={this.goAway3}>Актуальный статус документа</NavLink>
-        <NavLink to='/speed_copie' className='grey_square' activeClassName='white_square' onClick={this.goAway4}>Быстрое копирование договоров</NavLink>
-        <NavLink to='/filter' className='grey_square' activeClassName='white_square' onClick={this.goAway5}>Фильтр по документам и поиск названию, категориям и содержанию</NavLink>
-        <NavLink to='/preview' className='grey_square' activeClassName='white_square' onClick={this.goAway6}>Превью каждого документа</NavLink>
-        <NavLink to='/link_documents' className='grey_square' activeClassName='white_square' onClick={this.goAway7}>Ссылка подписания документа для второй стороны</NavLink>
-        <div className='wrap_img1'>
-         <div className='wrap_img2' ref={this.slider}>
-            <img src={image1} className='all_images' ref={this.image1} />
-                <img src={image2} className='all_images' ref={this.image2} />
-                  <img src={image3} className='all_images' ref={this.image3} />
-                    <img src={image4} className='all_images' ref={this.image4} />
-                  <img src={image5} className='all_images' ref={this.image5} />
-                <img src={image6} className='all_images' ref={this.image6} />
-            <img src={image7} className='all_images' ref={this.image7} />
+      <div className='wrap_animationMain'>
+        <div className='wrap_animation'>
+          <p className='opportunities'>Возможности</p>
+          <p className='your_click'>Ваша подпись за один клик, вторая сторона подписывает также легко по ссылке, шаблоны договоров, все документы разделены по папочкам и категориям</p>
+          <NavLink to='/all_documents' className='grey_square' activeClassName='white_square' onClick={this.goAway}>Все договора в одном месте</NavLink>
+          <NavLink to='/one_click' className='grey_square' activeClassName='white_square' onClick={this.goAway2}>Один клик для подписи</NavLink>
+          <NavLink to='/actual' className='grey_square' activeClassName='white_square' onClick={this.goAway3}>Актуальный статус документа</NavLink>
+          <NavLink to='/speed_copie' className='grey_square' activeClassName='white_square' onClick={this.goAway4}>Быстрое копирование договоров</NavLink>
+          <NavLink to='/filter' className='grey_square' activeClassName='white_square' onClick={this.goAway5}>Фильтр по документам и поиск названию, категориям и содержанию</NavLink>
+          <NavLink to='/preview' className='grey_square' activeClassName='white_square' onClick={this.goAway6}>Превью каждого документа</NavLink>
+          <NavLink to='/link_documents' className='grey_square' activeClassName='white_square' onClick={this.goAway7}>Ссылка подписания документа для второй стороны</NavLink>
+          <div className='wrap_img1'>
+           <div className='wrap_img2' ref={this.slider}>
+              <img src={image1} className='all_images' ref={this.image1} />
+                  <img src={image2} className='all_images' ref={this.image2} />
+                    <img src={image3} className='all_images' ref={this.image3} />
+                      <img src={image4} className='all_images' ref={this.image4} />
+                    <img src={image5} className='all_images' ref={this.image5} />
+                  <img src={image6} className='all_images' ref={this.image6} />
+              <img src={image7} className='all_images' ref={this.image7} />
+            </div>
           </div>
         </div>
       </div>

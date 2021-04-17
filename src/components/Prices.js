@@ -2,8 +2,10 @@ import React from 'react';
 
 function Prices() {
   return(
-    <div className='prices'>
-      Тарифы
+    <div className='wrap_prices'>
+      <div className='prices'>
+        Тарифы
+      </div>
     </div>
   )
 }

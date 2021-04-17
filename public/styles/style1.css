@@ -20,8 +20,14 @@ body {
   background-color: #E5E5E5;
   font-family: 'Manrope-Regular';
 }
+.wrap_header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .header {
   position: relative;
+  width: 1290px;
   top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 9%) 12% repeat(3, 10%) 40%;
@@ -35,6 +41,8 @@ body {
   border-bottom: 1px solid;
   margin: 0 55px;
   min-width: 165px;
+  position: relative;
+  left: 252px;
 }
 .active_header {
   color: #CCCCCC;
@@ -45,9 +53,11 @@ body {
   display: flex;
   justify-content: left;
   font-weight:700;
+  position: relative;
+  left: -115px;
 }
 .title {
-  grid-column: 2 / 7;
+  grid-column: 1 / 6;
   position: relative;
 }
 #title1 {
@@ -68,12 +78,19 @@ body {
   width: 65px;
   opacity:0.5;
 }
+.wrap2_order {
+  display: flex;
+  justify-content: center;
+}
 .wrap_order{
-	display:grid;
-	margin-top:50px;
-	grid-template-columns:3% 28.33333% 4% 28.33333% 4% 28.33333%;
-	justify-items:center;
-	align-items:center;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 0% 28.33333% 9% 27.33333% 9% 26.33333%;
+  justify-items: center;
+  align-items: center;
+  width: 1290px;
+  position: relative;
+  left: -21px;
 }
 .text__order{
 	justify-self:center;
@@ -88,11 +105,21 @@ body {
 .mes__name1{grid-area:mes__name1}
 .mes__name2{grid-area:mes__name2}
 
+.wrap_dialog, .wrap_dialog2, .wrap_dialog3,
+.wrap_dialog4, .wrap_dialog5, .wrap_prices,
+.wrap_animationMain, .wrap_legal, .wrap_countries,
+.wrap_myself {
+  display: flex;
+  justify-content: center;
+}
 .dialog{
+  width: 1290px;
+  position: relative;
+  left: -112px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	grid-row-gap: 10px;
-	margin-top:140px;
+	margin-top:68px;
 	grid-template-rows:200px 15px 100px 15px;
 	grid-template-areas:
 		". message1 . ."
@@ -113,11 +140,11 @@ body {
 .message2{
   position: relative;
   left: 100px;
-	margin-top:15px;
-	width:317px;
-	height:90px;
-	background-color:#0669DD;
-	border-radius:30px 30px 0 30px;
+  margin-top:15px;
+  width:317px;
+  height:90px;
+  background: linear-gradient(74.16deg, #0069E3 3.4%, #0500EF 99.01%);
+  border-radius:30px 30px 0 30px;
 }
 
 .mes__text1{
@@ -165,13 +192,17 @@ body {
   position: relative;
   top: 45px;
 }
+.wrap_picturesMain {
+  display: flex;
+  justify-content: center;
+}
 .wrap_pictures {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   top: 200px;
-  width: 65%;
-  left: 21%;
+  width: 1290px;
+  left: 21px;
 }
 #five_min {
   color: #3C0D79;
@@ -186,10 +217,13 @@ body {
   line-height: 50px;
 }
 .dialog2 {
+  width: 1290px;
+  position: relative;
+  left: -100px;
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
   grid-row-gap: 10px;
-  margin-top:425px;
+  margin-top:325px;
   grid-template-rows:200px 15px 100px 15px;
   grid-template-areas:
     ". dialog2_message1 . ."
@@ -204,18 +238,18 @@ body {
 .dialog2_message1 {
   position: relative;
   left: 100px;
-  width: 328px;
-  height: 132px;
+  width: 343px;
+  height: 100px;
   background-color: #5B5464;
   border-radius: 30px 30px 30px 0;
 }
 .dialog2_message2 {
   position: relative;
   left: 100px;
-  margin-top: 15px;
+  margin-top: -73px;
   width: 300px;
   height: 118px;
-  background-color: #0669DD;
+  background: linear-gradient(74.16deg, #0069E3 3.4%, #0500EF 99.01%);
   border-radius: 30px 30px 0 30px;
   padding: 0px 11px;
 }
@@ -227,4 +261,14 @@ body {
   padding: 13px 4px;
   text-align: center;
   justify-items: end;
+}
+#lyubov {
+  position: absolute;
+  top: 130px;
+  left: -100px;
+}
+#kostya {
+  position: absolute;
+  left: 355px;
+  top: 31px;
 }

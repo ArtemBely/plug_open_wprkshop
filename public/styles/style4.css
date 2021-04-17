@@ -1,8 +1,10 @@
 .myself {
   position: relative;
+  left: -155px;
   top: 350px;
   display: flex;
   justify-content: center;
+  width: 1290px;
 }
 .inside_myself {
   position: relative;
@@ -23,7 +25,7 @@
   width: 130px;
   position: relative;
   top: 140px;
-  left: -130px;
+  left: 120px;
 }
 .myself .inside_myself .purple:nth-child(2) {
   grid-column: 2 / 3;
@@ -47,13 +49,13 @@
   width: 150px;
   position: relative;
   top: 30px;
-  left: 60px;
+  left: 0;
 }
 .myself .inside_myself .common_myself:nth-child(4) {
   grid-column: 4 / 5;
   position: relative;
   top: -90px;
-  left: 45px;
+  left: 310px;
 }
 .myself .inside_myself .common_myself:nth-child(5) {
   grid-column: 1 / 2;
@@ -62,7 +64,7 @@
   justify-self: center;
   align-items: center;
   position: relative;
-  left: 85px;
+  left: 25px;
   top: 35px;
 }
 .myself .inside_myself .purple:nth-child(6) {
@@ -80,14 +82,14 @@
   width: 130px;
   position: relative;
   top: -40px;
-  left: -125px;
+  left: 120px;
 }
 .myself .inside_myself .common_myself:nth-child(8) {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
   position: relative;
   top: -70px;
-  left: 46px;
+  left: 310px;
 }
 .myself .inside_myself .common_myself:nth-child(9) {
   grid-column: 1 / 2;
@@ -96,7 +98,7 @@
   justify-self: center;
   align-items: center;
   position: relative;
-  left: 85px;
+  left: 25px;
   top: -25px;
 }
 .myself .inside_myself .purple:nth-child(10) {
@@ -116,7 +118,7 @@
   justify-self: center;
   align-items: center;
   top: -67px;
-  left: 86px;
+  left: 25px;
 }
 .myself .inside_myself .purple:nth-child(12) {
   grid-column: 2 / 3;
@@ -133,14 +135,31 @@
   top: -35px;
   grid-column: 3 / 5;
   grid-row: 4 / 5;
-  left: -137px;
+  left: -19px;
 }
 .myself .inside_myself .common_myself:nth-child(14) {
   position: relative;
   grid-column: 4 / 5;
   grid-row: 4 / 5;
   top: -75px;
-  left: 46px;
+  left: 310px;
+}
+.reg_bottom {
+  font-size: 19px;
+  color: #8D8D8D;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  margin: 0 55px;
+  min-width: 165px;
+  width: 165px;
+  position: relative;
+  left: 139px;
+}
+.wrap_reg {
+  display: grid;
+  justify-content: center;
 }
 
 .payment__img{
