@@ -1,0 +1,112 @@
+.wrap_profile{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.account_prof{
+	width: 1290px;
+	margin-top:50px;
+	display: grid;
+	grid-template-columns:repeat(6, 1fr) 2fr 0.5fr 1fr;
+	grid-column-gap: 30px;
+}
+.popo_logo{
+	grid-column: 1/2;
+	color: #2C2C2C;
+	font-size: 36px;
+	display:flex;
+	justify-content: left;
+	font-weight:700;
+}
+.profile_header{
+	margin-top:23px;
+}
+#documents_profile{
+	grid-column: 3/4;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #808080;
+}
+#finances_profile{
+	grid-column: 4/5;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 18px;
+	color: #000000;
+	opacity:0.5;
+	text-decoration: none;
+	border-bottom: 1px solid #D0D0D0;
+}
+#clients_profile{
+	grid-column: 5/6;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 18px;
+	color: #000000;
+	opacity:0.5;
+	text-decoration: none;
+	border-bottom: 1px solid #D0D0D0;
+}
+#help_profile{
+	grid-column: 6/7;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #D0D0D0;
+}
+.wrap_photo{
+	grid-column: 8/9;
+	margin-top:10px;
+}
+.profile_photo{
+	width: 48px;
+	height: 48px;
+}
+.profile_name{
+	grid-column: 9/10;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 18px;
+	color: #000000;
+}
+.profile_menu{
+	width: 1290px;
+	margin-top:75px;
+	display: grid;
+	grid-template-columns:0.2fr repeat(4, 1fr) 2fr 0.5fr 1fr 2fr ;
+	grid-column-gap:10px;
+	justify-items:center;
+}
+.wrap_profile_burger{
+	grid-column: 1/2;
+}
+#profile_burger{
+	width: 17px;
+	height: 13px;
+}
+.menu{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #808080;
+	text-decoration: none;
+	border-bottom: 1px dashed #CCCCCC;
+}
+#date{
+	color: #253238;
+}
+#everything{
+	color: #253238;
+	border:none;
+}
+#search{
+	border-bottom: 1px solid #CCCCCC;
+}
+#wait{
+	margin-left:20px;
+}
