@@ -28,7 +28,7 @@ const routes = [
     component: Congrats
   },
   {
-    path: '/profile',
+    path: ['/profile', '/add', '/first_layout', '/second_layout'],
     exact: true,
     component: Profile
   },

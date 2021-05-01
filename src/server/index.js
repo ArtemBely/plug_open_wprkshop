@@ -19,6 +19,9 @@ import checkRouter from './routers/check';
 import profileRouter from './routers/profile';
 import enterRouter from './routers/enter';
 import regRouter from './routers/registration';
+import addRouter from './routers/add';
+import firstLayRouter from './routers/firstLayOut';
+import secondLayRouter from './routers/secondLayOut';
 
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -82,6 +85,9 @@ app.use('/check_the_code', checkRouter);
 app.use('/profile', profileRouter);
 app.use('/registration', regRouter);
 app.use('/enter', enterRouter);
+app.use('/add', addRouter);
+app.use('/first_layout', firstLayRouter);
+app.use('/second_layout', secondLayRouter);
 
 app.get('*', (req, res, next) => {
   const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
