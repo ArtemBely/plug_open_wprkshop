@@ -3,7 +3,8 @@ import express from 'express';
 import serialize from 'serialize-javascript';
 import { StaticRouter } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
-import Registration from '../../components/Registration';
+//import Registration from '../../components/Registration';
+import Main from '../../components/Main';
 
 const router = express.Router();
 
@@ -11,7 +12,7 @@ router.get('/', notLoggedIn, (req, res) => {
   let cond = req.isAuthenticated();
   const congrats = renderToString(
     <StaticRouter>
-       <Registration />
+       <Main />
     </StaticRouter>
   )
   res.send(
