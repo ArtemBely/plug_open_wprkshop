@@ -186,7 +186,7 @@ body{
 	grid-row: 6/7;
 	margin-top: -100px;
 }
-.text7 :hover{
+.text7:hover{
 	background: url(/images/logo7_blue.svg) no-repeat;
 	background-position: left top;
 }
