@@ -107,6 +107,7 @@ body{
 	margin-top: 85px;
 	grid-column: 1/2;
 	grid-row: 3/4;
+	z-index: 1;
 }
 .text1:hover{
 	background: url(/images/logo1_blue.svg) no-repeat;
@@ -120,6 +121,7 @@ body{
 	margin-top: 50px;
 	grid-column: 1/2;
 	grid-row: 4/5;
+	z-index: 1;
 }
 .text2:hover{
 	background: url(/images/logo2_blue.svg) no-repeat;
@@ -133,6 +135,7 @@ body{
 	margin-top: 50px;
 	grid-column: 1/4;
 	grid-row: 1/2;
+	z-index: 1;
 }
 .text3:hover{
 	background: url(/images/logo3_blue.svg) no-repeat;
@@ -146,6 +149,7 @@ body{
 	margin-top: 85px;
 	grid-column: 2/3;
 	grid-row: 3/4;
+	z-index: 1;
 }
 .text4:hover{
 	background: url(/images/logo4_blue.svg) no-repeat;
@@ -159,6 +163,7 @@ body{
 	margin-top: 50px;
 	grid-column: 2/3;
 	grid-row: 4/5;
+	z-index: 1;
 }
 .text5:hover{
 	background: url(/images/logo5_blue.svg) no-repeat;
@@ -172,6 +177,7 @@ body{
 	margin-top: 50px;
 	grid-column: 2/3;
 	grid-row: 5/6;
+	z-index: 1;
 }
 .text6:hover{
 	background: url(/images/logo6_blue.svg) no-repeat;
@@ -185,8 +191,9 @@ body{
 	grid-column: 2/3;
 	grid-row: 6/7;
 	margin-top: -100px;
+	z-index: 1;
 }
-.text7 :hover{
+.text7:hover{
 	background: url(/images/logo7_blue.svg) no-repeat;
 	background-position: left top;
 }
