@@ -98,6 +98,7 @@ body{
 	font-size: 20px;
 	line-height: 28px;
 	padding-left: 72px;
+	z-index: 1;
 }
 .text1{
 	background: url(/images/logo1.svg) no-repeat;
@@ -107,7 +108,6 @@ body{
 	margin-top: 85px;
 	grid-column: 1/2;
 	grid-row: 3/4;
-	z-index: 1;
 }
 .text1:hover{
 	background: url(/images/logo1_blue.svg) no-repeat;
@@ -121,7 +121,6 @@ body{
 	margin-top: 50px;
 	grid-column: 1/2;
 	grid-row: 4/5;
-	z-index: 1;
 }
 .text2:hover{
 	background: url(/images/logo2_blue.svg) no-repeat;
@@ -135,7 +134,6 @@ body{
 	margin-top: 50px;
 	grid-column: 1/4;
 	grid-row: 1/2;
-	z-index: 1;
 }
 .text3:hover{
 	background: url(/images/logo3_blue.svg) no-repeat;
@@ -149,7 +147,6 @@ body{
 	margin-top: 85px;
 	grid-column: 2/3;
 	grid-row: 3/4;
-	z-index: 1;
 }
 .text4:hover{
 	background: url(/images/logo4_blue.svg) no-repeat;
@@ -163,7 +160,6 @@ body{
 	margin-top: 50px;
 	grid-column: 2/3;
 	grid-row: 4/5;
-	z-index: 1;
 }
 .text5:hover{
 	background: url(/images/logo5_blue.svg) no-repeat;
@@ -177,7 +173,6 @@ body{
 	margin-top: 50px;
 	grid-column: 2/3;
 	grid-row: 5/6;
-	z-index: 1;
 }
 .text6:hover{
 	background: url(/images/logo6_blue.svg) no-repeat;
@@ -191,7 +186,6 @@ body{
 	grid-column: 2/3;
 	grid-row: 6/7;
 	margin-top: -100px;
-	z-index: 1;
 }
 .text7:hover{
 	background: url(/images/logo7_blue.svg) no-repeat;
@@ -247,6 +241,109 @@ body{
 	position: relative;
 	top: -670px;
 	left: -380px;
+}
+
+
+@media (min-width:576px) and (max-width:768px) {
+	.container{
+		width: 576px;
+		grid-template-columns: 230px 250px;
+		grid-column-gap: 22px;
+		margin-top: 236px;
+		margin-bottom: -200px;
+	}
+	.header_title{
+		font-size: 30px;
+		line-height: 42px;
+	}
+	.header_subtitle{
+		font-size: 20px;
+		line-height: 34px;
+		padding-top: 0px;
+		width: 400px;
+	}
+	.header_text{
+		padding-left: 0px;
+		padding-top: 50px;
+	}
+	.text1{
+		width: 180px;
+		margin-top: 0px;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		padding-top: 105px;
+		z-index: 2;
+	}
+	.text2{
+		width: 140px;
+		margin-top: -40px;
+		grid-column: 2/3;
+		grid-row: 4/5;
+		padding-top: 140px;
+	}
+	.text3{
+		width: 240px;
+		margin-top: -80px;
+		grid-column: 1/4;
+		grid-row: 1/2;
+		padding-top: 55px;
+	}
+	.header_block{
+		grid-column: 2/3;
+		grid-row: 6/7;
+		grid-row-gap: 10px;
+	}
+	.text4{
+		width: 250px;
+		margin-top: 50px;
+		grid-column: 1/2;
+		grid-row: 4/5;
+	}
+	.text5{
+		width: 180px;
+		margin-top: 0px;
+		grid-column: 1/2;
+		grid-row: 3/4;
+		padding-top: 105px;
+	}
+	.text6{
+		width: 200px;
+		margin-top: 45px;
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	.text7{
+		width: 220px;
+		grid-column: 1/2;
+		grid-row: 5/6;
+		margin-top: 50px;
+	}
+	.block_img1{
+		margin-left: 0px;
+		margin-top: -260px;
+	}
+	.block_img2{
+		margin-left: 109px;
+		margin-top: -267px;
+	}
+	.block_img3{
+		grid-column: 1/2;
+		margin-left: 10px;
+		margin-top: -210px;
+	}
+	.header_block_rct1{
+		grid-row: 2/3;
+		margin-left: 130px;
+		margin-top: -210px;
+	}
+	.header_block_rct2{
+		margin-left: 0px;
+		margin-top: -450px;
+	}
+	.gun_line{
+		top: -260px;
+		left: -180px;
+	}
 }
 
 
