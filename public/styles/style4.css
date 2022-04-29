@@ -1,0 +1,30 @@
+/*Footer*/
+.wrap_footer{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 178px 178px 64px 135px 25px;
+	margin-top: 55px;
+	background: #3D3D3D;
+	mix-blend-mode: normal;
+}
+.footer_link{
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	height: 19px;
+	border-bottom: 1px solid #FFFFFF;
+}
+.link8, .link13{
+	color: #B8B8B8;
+	border-bottom: none;
+}
+.language2{
+	border-bottom: 1px dashed #FFFFFF;
+}
+.footer_contacts{
+	grid-column: 4/6;
+	grid-row: 5/6;
+}
+
+
+
