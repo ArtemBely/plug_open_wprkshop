@@ -28,6 +28,7 @@
 	font-size: 17px;
 	line-height: 22px;
 	color: #FFFFFF;
+	outline: none;
 }
 .subcribe_button{
 	width: 137px;
@@ -38,6 +39,7 @@
 	font-size: 17px;
 	line-height: 22px;
 	color: #FFFFFF;
+	border: none;
 }
 .subcribe_text{
 	position: relative;
@@ -52,7 +54,7 @@
 
 .wrap_information{
 	width:1120px;
-	margin-top: 55px;
+	margin: 55px 0px;
 	display: grid;
 	grid-gap: 56px;
 	grid-template-columns:repeat(2, 527px);

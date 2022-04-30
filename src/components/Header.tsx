@@ -3,12 +3,37 @@ import logo from '../../public/images/Union.svg';
 
 
 
-function Header(){
-    return(
+
+/*const elements = document.getElementsByClassName('menu_item');
+	for (i=0; i<elements.length; i++) {
+		elements[i].addEventListener('mouseenter', showSub, false);
+		elements[i].addEventListener('mouseleave', hideSub, false);
+}
+ function showSub() {
+	 if(this.children.length>1) {
+		this.children[1].style.height = 'auto';
+		this.children[1].style.opacity = '1';
+		this.children[1].style.overflow = 'visible';
+	 } else {
+		 return false; 
+	 }
+ }
+ function hideSub() {
+	if(this.children.length>1) {
+	  this.children[1].style.height = '0';
+	  this.children[1].style.opacity = '0';
+	  this.children[1].style.overflow = 'hidden';
+	} else {
+		return false; 
+	}
+}*/
+
+function Header() {
+	return (
 		<div className='wrap_header'>
 			<div className='header'>
 				<div className='red_logo'>
-					<img src={logo} id='logo'/>
+					<img src={logo} id='logo' />
 				</div>
 				<div id='nav'>
 					<div className='menu_item'>
@@ -21,14 +46,14 @@ function Header(){
 						</div>
 					</div>
 				</div>
-				
+
 				<a href='#' className='header_link link2'>About</a>
-				<p className='header_link phone'>+41 79 269 53 60</p>
+				<a href='41792695360' className='header_link phone'>+41 79 269 53 60</a>
 				<a href='#' className='header_link link3'>Join us</a>
 				<a href='#' className='header_link language'>En</a>
 			</div>
-	 	</div>
-    )
+		</div>
+	)
 }
 
 export default Header;
