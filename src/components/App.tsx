@@ -5,6 +5,9 @@ import '../../public/styles/style1.css';
 import '../../public/styles/style2.css';
 import '../../public/styles/style3.css';
 import '../../public/styles/style4.css';
+import '../../public/styles/tablet1.css';
+import '../../public/styles/tablet2.css';
+import '../../public/styles/phone1.css';
 
 export class App extends Component<any> {
   render() {

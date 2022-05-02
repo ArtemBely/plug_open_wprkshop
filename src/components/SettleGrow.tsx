@@ -11,6 +11,7 @@ function Header(){
 				<div className='mountains'>
 					<img src={mountains} id='mountains_img'/>
 				</div>
+				<h3 className='settleGrow_title2'>Settle, grow and expand</h3>
 				<div className='settleGrow_img'>
 					<img src={growImage} id='grow_img'/>
 					<a href='#' className='grow_download'>Download One Pager</a>

@@ -6,6 +6,7 @@ function Header() {
         React.createElement("div", { className: 'wrap_settleGrow' },
             React.createElement("div", { className: 'mountains' },
                 React.createElement("img", { src: mountains, id: 'mountains_img' })),
+            React.createElement("h3", { className: 'settleGrow_title2' }, "Settle, grow and expand"),
             React.createElement("div", { className: 'settleGrow_img' },
                 React.createElement("img", { src: growImage, id: 'grow_img' }),
                 React.createElement("a", { href: '#', className: 'grow_download' }, "Download One Pager")),

@@ -41,7 +41,7 @@
 	-ms-grid-row:2;
 	-ms-grid-row-span:1;
 	grid-row:2/3;
-	padding-top: 31.81px;
+	padding-top: 8.81px;
 }
 .mainScreen_link{
 	color: #3D3D3D;
@@ -72,7 +72,7 @@
 	-ms-grid-row:3;
 	-ms-grid-row-span:1;
 	grid-row:3/4;
-	padding-top: 32.19px;
+	padding-top: 50.19px;
 }
 .link6, .link7{
 	-ms-grid-column:1;
@@ -81,7 +81,7 @@
 	-ms-grid-row:4;
 	-ms-grid-row-span:1;
 	grid-row:4/5;
-	padding-top: 39.81px;
+	padding-top: 32px;
 	z-index: 2;
 }
 .link5{
@@ -114,7 +114,7 @@
 	grid-template-columns:480px 570px;
 	grid-column-gap:60px;
 }
-.settleGrow_title{
+.settleGrow_title, .settleGrow_title2{
 	font-family: 'Montserrat-Bold';
 	color: #3D3D3D;
 	font-size: 40px;
@@ -123,6 +123,9 @@
 	        font-feature-settings: 'pnum' on, 'lnum' on, 'cpsp' on, 'case' on;
 	margin: 0;
 	width: 264px;
+}
+.settleGrow_title2{
+	display: none;
 }
 .settleGrow_item{
 	font-family: 'Inter-Bold';
@@ -161,7 +164,7 @@
 .grow_text2{
 	width: 528px;
 }
-.grow_text2{
+.grow_text3{
 	width: 495px;
 }
 .grow_download{
