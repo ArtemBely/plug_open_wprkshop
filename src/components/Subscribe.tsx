@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-function Header(){
+function Subscribe(){
     return(
 		<div className='container'>
 			<div className='wrap_subscribe'>
@@ -18,4 +18,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default Subscribe;

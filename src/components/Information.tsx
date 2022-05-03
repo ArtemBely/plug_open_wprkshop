@@ -1,14 +1,18 @@
 import React from 'react';
+//@ts-ignore
 import block1 from '../../public/images/shutterstock_1606410442 1.png';
+//@ts-ignore
 import block2 from '../../public/images/IMG_5588 3 1.png';
+//@ts-ignore
 import block3 from '../../public/images/Mask Group.png';
+//@ts-ignore
 import block4 from '../../public/images/Group 109.png';
 
 
 
 
 
-function Header(){
+function information(){
     return(
 		<div className='container'>
 			<div className='wrap_information'>
@@ -46,4 +50,4 @@ function Header(){
    )
 }
 
-export default Header;
+export default information;

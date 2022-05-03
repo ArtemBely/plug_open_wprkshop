@@ -1,10 +1,12 @@
 import React from 'react';
+//@ts-ignore
 import growImage from '../../public/images/Group 131.png';
+//@ts-ignore
 import mountains from '../../public/images/mountains.png';
 
 
 
-function Header(){
+function SettleGrow(){
     return(
 		<div className='container'>
 			<div className='wrap_settleGrow'>
@@ -30,4 +32,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default SettleGrow;

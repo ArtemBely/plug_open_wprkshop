@@ -6,7 +6,7 @@ import  { hydrate }  from 'react-dom';
 var window:any;
 hydrate(
   <BrowserRouter>
-      <App data={window.__INITIAL_DATA__}/>
+      <App />
   </BrowserRouter>,
   document.getElementById('app')
 );

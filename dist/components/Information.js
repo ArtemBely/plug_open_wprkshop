@@ -1,9 +1,13 @@
 import React from 'react';
+//@ts-ignore
 import block1 from '../../public/images/shutterstock_1606410442 1.png';
+//@ts-ignore
 import block2 from '../../public/images/IMG_5588 3 1.png';
+//@ts-ignore
 import block3 from '../../public/images/Mask Group.png';
+//@ts-ignore
 import block4 from '../../public/images/Group 109.png';
-function Header() {
+function information() {
     return (React.createElement("div", { className: 'container' },
         React.createElement("div", { className: 'wrap_information' },
             React.createElement("div", { className: 'information_block1' },
@@ -33,4 +37,4 @@ function Header() {
                 React.createElement("p", { className: 'block4_text information_text' }, "QL Strategy is an authorized Swiss financial intermediary as per Swiss Law and conducts all necessary steps to protect investors, verify the source of funds and fight against Money laundering. More information about the investment Club will be presented in Davos at the International EmTech Investment Meeting Forum, which takes place from 16 to 22 of January 2022. Please let us know if you would like to be within the club members and we will contact you."),
                 React.createElement("p", { className: 'block4_more information_more' }, "More")))));
 }
-export default Header;
+export default information;

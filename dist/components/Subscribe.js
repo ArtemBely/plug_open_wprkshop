@@ -1,5 +1,5 @@
 import React from 'react';
-function Header() {
+function Subscribe() {
     return (React.createElement("div", { className: 'container' },
         React.createElement("div", { className: 'wrap_subscribe' },
             React.createElement("h3", { className: 'subscribe_title' },
@@ -15,4 +15,4 @@ function Header() {
                 " form you accept our ",
                 React.createElement("a", { href: '#', className: 'subcribe_link' }, "Privacy Policy")))));
 }
-export default Header;
+export default Subscribe;
