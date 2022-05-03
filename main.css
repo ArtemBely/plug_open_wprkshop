@@ -1346,9 +1346,9 @@ body {
 	/*Footer*/
 	.wrap_footer{
 		width: 513px;
-		height: 359px;
+		height: 270px;
 		grid-template-columns: 206px 94px 193px 17px;
-		grid-template-rows: 77px 36px repeat(3, 42px) 59px 24px;
+		grid-template-rows: 77px 36px repeat(3, 42px) 25px;
 		padding: 36px 0px 58px 0px;
 	}
 	.footer_link{
