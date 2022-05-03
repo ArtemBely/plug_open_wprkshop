@@ -1,6 +1,7 @@
 import React from 'react';
+//@ts-ignore
 import mainImage from '../../public/images/MainScreen.jpg';
-function Header() {
+function MainScreen() {
     return (React.createElement("div", { className: 'container' },
         React.createElement("div", { className: 'wrap_mainScreen' },
             React.createElement("h1", { className: 'mainScreen_title' }, "Strategic management"),
@@ -11,4 +12,4 @@ function Header() {
             React.createElement("a", { href: '#', className: 'mainScreen_link link7' }, "Investment Club"),
             React.createElement("img", { src: mainImage, id: 'mainImage' }))));
 }
-export default Header;
+export default MainScreen;

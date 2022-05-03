@@ -1,7 +1,9 @@
 import React from 'react';
+//@ts-ignore
 import growImage from '../../public/images/Group 131.png';
+//@ts-ignore
 import mountains from '../../public/images/mountains.png';
-function Header() {
+function SettleGrow() {
     return (React.createElement("div", { className: 'container' },
         React.createElement("div", { className: 'wrap_settleGrow' },
             React.createElement("div", { className: 'mountains' },
@@ -19,4 +21,4 @@ function Header() {
                 React.createElement("p", { className: 'settleGrow_item grow_item3' }, "Goals"),
                 React.createElement("p", { className: 'settleGrow_text grow_text3' }, "Being in the heart of Europe, we would like to use Swiss support of innovation and entrepreneurship for the world's good.  But opening and developing businesses in Switzerland can be just the first step. Bringing EmTech further to other countries, we would build positioning upon advanced social science and local partnerships. We believe that education and collaboration lead to tech adoption. That is why we host annual EmTech conferences in Davos and founded the Investment Club. ")))));
 }
-export default Header;
+export default SettleGrow;

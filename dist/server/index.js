@@ -78,7 +78,7 @@ app.get('*', (req, res, next) => {
                   <title>collab</title>
                   <link rel="stylesheet" type="text/css" href="../main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
-                      <script src='bundles//bundle.js' defer></script>
+                      <script src='bundles/bundle.js' defer></script>
                         <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
                             <title>COLLAB</title>
                           </head>

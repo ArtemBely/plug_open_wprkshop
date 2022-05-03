@@ -1,10 +1,11 @@
 import React from 'react';
+//@ts-ignore
 import mainImage from '../../public/images/MainScreen.jpg';
 
 
 
 
-function Header(){
+function MainScreen(){
     return(
 		<div className='container'>
 			<div className='wrap_mainScreen'>
@@ -20,4 +21,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default MainScreen;

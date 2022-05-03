@@ -11,11 +11,11 @@ function Main(){
     return(
       <div>
         <Header />
-		  <MainScreen />
-		  <SettleGrow />
-		  <Subscribe />
-		  <Information />
-		  <Footer />
+  		  <MainScreen />
+  		  <SettleGrow />
+  		  <Subscribe />
+  		  <Information />
+  		  <Footer />
       </div>
     )
 }
