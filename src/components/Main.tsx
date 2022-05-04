@@ -6,6 +6,7 @@ import SettleGrow from './SettleGrow';
 import Subscribe from './Subscribe';
 import Information from './Information';
 import Footer from './Footer';
+import BankAccount from './BankAccount';
 
 function Main(){
     return(
@@ -16,6 +17,7 @@ function Main(){
   		  <Subscribe />
   		  <Information />
   		  <Footer />
+		  <BankAccount />
       </div>
     )
 }

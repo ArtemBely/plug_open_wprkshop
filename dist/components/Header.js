@@ -7,7 +7,7 @@ class Header extends Component {
         this.sub = React.createRef();
         this.sub = React.createRef();
     }
-    /*
+    /*  --> обозначения функций с привязкой ref (id) элементов
     showSub = (): void => {
             this.sub?.current?.classList.add("hideMenu");
     }
