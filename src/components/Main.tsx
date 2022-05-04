@@ -10,12 +10,12 @@ import Footer from './Footer';
 function Main(){
     return(
       <div>
-        <Header />
-  		  <MainScreen />
-  		  <SettleGrow />
-  		  <Subscribe />
-  		  <Information />
-  		  <Footer />
+          <Header />
+    		  <MainScreen />
+    		  <SettleGrow />
+    		  <Subscribe />
+    		  <Information />
+    		  <Footer />
       </div>
     )
 }

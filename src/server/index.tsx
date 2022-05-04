@@ -17,6 +17,7 @@ import Error from '../interfaces/Error';
 
 
 import regRouter from './routers/registration';
+import accountSw from './routers/accountSw';
 
 import chRouter from './routers/check';
 const app: Application = express();
@@ -78,7 +79,7 @@ app.use(passport.session());
 
 app.use('/registration', regRouter);
 app.use('/check', chRouter);
-
+app.use('/account_in_sw', accountSw);
 
 app.get('*', (req: Request, res: Response, next: NextFunction) => {
   const activeRouter: any = Routes.find((route: any) => matchPath(req.url, route)) || {};
