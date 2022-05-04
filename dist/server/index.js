@@ -70,6 +70,7 @@ app.get('*', (req, res, next) => {
         Promise.resolve();
     promise.then((data) => {
         const context = { data };
+        const user = { name: "Artem" };
         const markup = renderToString(React.createElement(StaticRouter, { location: req.url, context: context },
             React.createElement(App, { data: data })));
         const html = `<!DOCTYPE html>
@@ -79,7 +80,7 @@ app.get('*', (req, res, next) => {
                   <link rel="stylesheet" type="text/css" href="../main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='bundles/bundle.js' defer></script>
-                        <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
+                        <script>window.__INITIAL_DATA__= ${serialize(user)}</script>
                             <title>COLLAB</title>
                           </head>
                         <body>

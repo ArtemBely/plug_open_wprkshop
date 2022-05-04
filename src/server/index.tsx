@@ -79,6 +79,7 @@ app.use(passport.session());
 app.use('/registration', regRouter);
 app.use('/check', chRouter);
 
+
 app.get('*', (req: Request, res: Response, next: NextFunction) => {
   const activeRouter: any = Routes.find((route: any) => matchPath(req.url, route)) || {};
   const promise = activeRouter.fetchInitialData ?
@@ -86,6 +87,7 @@ app.get('*', (req: Request, res: Response, next: NextFunction) => {
                   Promise.resolve()
   promise.then((data: any) => {
     const context: object = { data };
+    const user:object = { name: "Artem" };
     const markup = renderToString(
         <StaticRouter location={req.url} context={context}>
            <App data={data}/>
@@ -100,7 +102,7 @@ app.get('*', (req: Request, res: Response, next: NextFunction) => {
                   <link rel="stylesheet" type="text/css" href="../main.css">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                       <script src='bundles/bundle.js' defer></script>
-                        <script>window.__INITIAL_DATA__= ${serialize(data)}</script>
+                        <script>window.__INITIAL_DATA__= ${serialize(user)}</script>
                             <title>COLLAB</title>
                           </head>
                         <body>

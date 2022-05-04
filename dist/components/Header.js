@@ -5,9 +5,21 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.sub = React.createRef();
+        let user;
+        if (typeof window != "undefined") {
+            user = window.__INITIAL_DATA__;
+        }
+        this.state = {
+            user
+        };
         this.sub = React.createRef();
     }
-    /*
+    componentDidMount() {
+        setTimeout(() => {
+            console.log(this.state.user);
+        }, 1000);
+    }
+    /*  --> обозначения функций с привязкой ref (id) элементов
     showSub = (): void => {
             this.sub?.current?.classList.add("hideMenu");
     }

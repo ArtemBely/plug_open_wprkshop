@@ -18,7 +18,6 @@ class Header extends Component<{}, {}>{
 showSub = (): void => {
 		this.sub?.current?.classList.add("hideMenu");
 }
-
 hideSub = (): void => {
     this.sub?.current?.classList.remove("hideMenu");
 }
