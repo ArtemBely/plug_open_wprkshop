@@ -5,6 +5,8 @@ import background from '../../public/images/image 2.png';
 import logo from '../../public/images/UnionBank.svg';
 //@ts-ignore
 import timeline from '../../public/images/timeline.png';
+//@ts-ignore
+import timeline2 from '../../public/images/Frame 28.png';
 
 
 
@@ -23,6 +25,9 @@ function BankAccount(){
 				 <div className='timeline_block'>
 				 	<img src={timeline} id='timeline_img'/>
 				 </div>
+				 <div className='timeline_block2'>
+				 	<img src={timeline2} id='timeline_img2'/>
+				 </div>
 				 <div className='bankAccount_block1'>
 				 	<h4 className='bankAccount_item'>Advantages of opening a bank account in Switzerland</h4>
 					<p className='advantages_block1 advantages1'>The main benefits of Swiss bank accounts are the low level of the financial risk and the high level of privacy</p>
@@ -33,12 +38,12 @@ function BankAccount(){
 				 </div>
 				 <div className='bankAccount_block2'>
 				 	<h4 className='bankAccount_item'>How to open a corporate bank account in Switzerland</h4>
-					<p className='block2_text'>There is a certain list of documents to be filed to the Swiss bank in order to open a corporate bank account in Switzerland:</p>
+					<p className='block2_text6'>There is a certain list of documents to be filed to the Swiss bank in order to open a corporate bank account in Switzerland:</p>
 					<p className='bankAccount_text block2_text1'>Details of all shareholders of the company in the form of copies of valid passports or IDs and permanent addresses.</p>
 					<p className='bankAccount_text block2_text2'>Business incorporation information and contact person.</p>
 					<p className='bankAccount_text block2_text3'>Information about the company.</p>
 					<p className='bankAccount_text block2_text4'>Information about the type of account, services and intentions of using it.</p>
-					<p className='bankAccount_text block2_text5'> Information about the potential cash withdrawals.</p>
+					<p className='bankAccount_text block2_text5'>Information about the potential cash withdrawals.</p>
 					<a href='#' className='block2_button'>Download a checklist to open a corporate bank account</a>
 				 </div>
 				 <div className='bankAccount_block3'>

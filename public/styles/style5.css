@@ -41,6 +41,12 @@
 	color: #3D3D3D;
 	margin: 0;
 }
+.timeline_block2{
+	display: none;
+}
+#timeline_img2{
+	display: none;
+}
 #timeline_img{
 	margin-top: 4px;
 	height: 208px;
@@ -77,7 +83,7 @@
 	grid-template-columns: 659px 295px;
 	grid-column-gap: 157px;
 }
-.block2_text{
+.block2_text6{
 	width: 622px;
 	font-size: 16px;
 	line-height: 26px;
@@ -145,7 +151,7 @@
 	grid-column: 2/3;
 	grid-row: 2/3;
 	margin-top: 20px;
-	width: 292px;
+	width: 260px;
 	font-family: 'Inter-Bold';
 	font-size: 18px;
 	line-height: 26px;

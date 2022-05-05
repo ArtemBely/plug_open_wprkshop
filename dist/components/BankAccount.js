@@ -5,6 +5,8 @@ import background from '../../public/images/image 2.png';
 import logo from '../../public/images/UnionBank.svg';
 //@ts-ignore
 import timeline from '../../public/images/timeline.png';
+//@ts-ignore
+import timeline2 from '../../public/images/Frame 28.png';
 function BankAccount() {
     return (React.createElement("div", { className: 'container' },
         React.createElement("div", { className: 'wrap_bankAccount' },
@@ -19,6 +21,8 @@ function BankAccount() {
             React.createElement("h4", { className: 'bankAccount_item' }, "How to open a bank account"),
             React.createElement("div", { className: 'timeline_block' },
                 React.createElement("img", { src: timeline, id: 'timeline_img' })),
+            React.createElement("div", { className: 'timeline_block2' },
+                React.createElement("img", { src: timeline2, id: 'timeline_img2' })),
             React.createElement("div", { className: 'bankAccount_block1' },
                 React.createElement("h4", { className: 'bankAccount_item' }, "Advantages of opening a bank account in Switzerland"),
                 React.createElement("p", { className: 'advantages_block1 advantages1' }, "The main benefits of Swiss bank accounts are the low level of the financial risk and the high level of privacy"),
@@ -28,12 +32,12 @@ function BankAccount() {
                 React.createElement("a", { href: '#', className: 'block1_button' }, "Request a Free Consultation")),
             React.createElement("div", { className: 'bankAccount_block2' },
                 React.createElement("h4", { className: 'bankAccount_item' }, "How to open a corporate bank account in Switzerland"),
-                React.createElement("p", { className: 'block2_text' }, "There is a certain list of documents to be filed to the Swiss bank in order to open a corporate bank account in Switzerland:"),
+                React.createElement("p", { className: 'block2_text6' }, "There is a certain list of documents to be filed to the Swiss bank in order to open a corporate bank account in Switzerland:"),
                 React.createElement("p", { className: 'bankAccount_text block2_text1' }, "Details of all shareholders of the company in the form of copies of valid passports or IDs and permanent addresses."),
                 React.createElement("p", { className: 'bankAccount_text block2_text2' }, "Business incorporation information and contact person."),
                 React.createElement("p", { className: 'bankAccount_text block2_text3' }, "Information about the company."),
                 React.createElement("p", { className: 'bankAccount_text block2_text4' }, "Information about the type of account, services and intentions of using it."),
-                React.createElement("p", { className: 'bankAccount_text block2_text5' }, " Information about the potential cash withdrawals."),
+                React.createElement("p", { className: 'bankAccount_text block2_text5' }, "Information about the potential cash withdrawals."),
                 React.createElement("a", { href: '#', className: 'block2_button' }, "Download a checklist to open a corporate bank account")),
             React.createElement("div", { className: 'bankAccount_block3' },
                 React.createElement("h4", { className: 'bankAccount_item' }, "Important to know"),
