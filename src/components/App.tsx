@@ -6,14 +6,19 @@ import '../../public/styles/style2.css';
 import '../../public/styles/style3.css';
 import '../../public/styles/style4.css';
 import '../../public/styles/style5.css';
+import '../../public/styles/style6.css';
 import '../../public/styles/tablet1.css';
 import '../../public/styles/tablet2.css';
 import '../../public/styles/tablet3.css';
 import '../../public/styles/tablet4.css';
+import '../../public/styles/tablet5.css';
+import '../../public/styles/tablet6.css';
 import '../../public/styles/phone1.css';
 import '../../public/styles/phone2.css';
 import '../../public/styles/phone3.css';
 import '../../public/styles/phone4.css';
+import '../../public/styles/phone5.css';
+import '../../public/styles/phone6.css';
 
 export class App extends Component<any> {
   render() {

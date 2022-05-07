@@ -1,0 +1,56 @@
+@media (min-width: 576px) and (max-width: 767px) {
+	/*TaxLegal*/
+	.wrap_taxLegal{
+		width: 513px;
+		grid-template-columns: 513px;
+		grid-column-gap:0px ;
+	}
+	#background_tax{
+		left: -300px;
+		width: 1120px;
+		height: 400px;
+	}
+	#logo_tax{
+		top: 45px;
+		left: 10px;
+		height: 350px;
+	}
+	.taxLegal_title{
+		margin: 50px 0 20px 0;
+	}
+	.taxLegal_subtitle{
+		font-size: 14px;
+		line-height: 24px;
+		width: 513px;
+	}
+	.taxLegal_button{
+		margin-bottom: 30px;
+		grid-row: 4/5;
+		grid-column: 1/2;
+	}
+	.tax_text{
+		font-size: 14px;
+		line-height: 19px;
+		width: 450px;
+	}
+	.taxLegal_section1{
+		width: 510px;
+		height: 66px;
+		padding: 25px 0px 25px 25px;
+		grid-column: 1/2;
+	}
+	.taxLegal_section2{
+		padding: 25px 0px 33px 25px;
+		width: 510px;
+		height: 810px;
+		grid-column: 1/2;
+	}
+	.taxLegal_section3{
+		padding: 25px 0px 33px 25px;
+		width: 510px;
+		height: 525px;
+		grid-column: 1/2;
+	}
+
+}
+
