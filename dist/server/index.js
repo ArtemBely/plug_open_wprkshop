@@ -15,6 +15,8 @@ import passport from 'passport';
 import flash from 'connect-flash';
 import regRouter from './routers/registration';
 import accountSw from './routers/accountSw';
+import taxesRouter from './routers/taxes';
+import amlRouter from './routers/aml';
 import chRouter from './routers/check';
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -65,6 +67,8 @@ app.use(passport.session());
 app.use('/registration', regRouter);
 app.use('/check', chRouter);
 app.use('/account_in_sw', accountSw);
+app.use('/taxes', taxesRouter);
+app.use('/aml_control', amlRouter);
 app.get('*', (req, res, next) => {
     const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
     const promise = activeRouter.fetchInitialData ?
