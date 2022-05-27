@@ -27,13 +27,24 @@ render() {
 				<div className='wrap_header'>
 					<div className='header'>
 						<div className='red_logo'>
-							<img src={logo} id='logo' />
+							<a href='#mainScreen'><img src={logo} id='logo' /></a>
 						</div>
 						<div id='nav'>
 							<div className='menu_item'>
 								<a href='#' className='header_link link1'>Capabilities</a>
 								<div className="submenu hideMenu" ref={this.sub}>
-									<a href='#' className="submenu_item">Business in Switzerland</a>
+									<div id='nav_2'>
+										<div className='menu_item2'>
+											<a href='#' className="submenu_item business_in_sw">Business in Switzerland</a>
+											<div className='submenu_2 hideMenu2'>
+												<a href="#" className='submenu_item'>Swiss Companies Setup</a>
+												<a href="#" className='submenu_item'>Bank account in Switzerland</a>
+												<a href="#" className='submenu_item'>AML control</a>
+												<a href="#" className='submenu_item submenu_tax'>Tax and Legal</a>
+											</div>
+										</div>
+									</div>
+									
 									<a href='#' className="submenu_item">Business development</a>
 									<a href='#' className="submenu_item">EmTech in Davos</a>
 									<a href='#' className="submenu_item">Investment Club</a>

@@ -10,6 +10,17 @@
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
+.container_sub{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
 .wrap_mainScreen{
 	display: -ms-grid;
 	display: grid;
@@ -113,6 +124,9 @@
 	-ms-grid-columns:480px 60px 570px;
 	grid-template-columns:480px 570px;
 	grid-column-gap:60px;
+}
+.settleGrow_phone{
+	display: none;
 }
 .settleGrow_title, .settleGrow_title2{
 	font-family: 'Montserrat-Bold';

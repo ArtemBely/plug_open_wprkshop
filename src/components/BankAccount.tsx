@@ -44,7 +44,10 @@ function BankAccount(){
 					<p className='bankAccount_text block2_text3'>Information about the company.</p>
 					<p className='bankAccount_text block2_text4'>Information about the type of account, services and intentions of using it.</p>
 					<p className='bankAccount_text block2_text5'>Information about the potential cash withdrawals.</p>
-					<a href='#' className='block2_button'>Download a checklist to open a corporate bank account</a>
+					<a href='#' className='block2_button'> 
+						<span>Download a checklist to open</span> 
+						<span>a corporate bank account</span>
+					</a>
 				 </div>
 				 <div className='bankAccount_block3'>
 				 	<h4 className='bankAccount_item'>Important to know</h4>

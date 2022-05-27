@@ -3,7 +3,7 @@
 	width:1120px;
 	display: grid;
 	grid-template-columns: 622px 203px;
-	grid-column-gap:195px ;
+	grid-column-gap:195px;
 }
 #background_tax{
 	position: relative;
@@ -51,6 +51,11 @@
 	padding: 9px 24px;
 	grid-row: 3/4;
 	grid-column: 2/3;
+	transition: all 0.15s ease;
+}
+.taxLegal_button:hover{
+	color: #840009;
+	border: 2px solid #840009;
 }
 .tax_text{
 	font-size: 16px;

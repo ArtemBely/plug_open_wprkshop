@@ -146,6 +146,11 @@
 	border: 2px solid #B7000D;
 	padding: 9px 20px;
 	text-decoration: none;
+	transition: all 0.15s ease;
+}
+.block1_button:hover{
+	color: #840009;
+	border: 2px solid #840009;
 }
 .block2_button{
 	grid-column: 2/3;
@@ -155,11 +160,18 @@
 	font-family: 'Inter-Bold';
 	font-size: 18px;
 	line-height: 26px;
-	text-decoration-line: underline;
+	text-decoration: none;
 	color: #3D3D3D;
 	background: url(../images/UnionButton.svg) left no-repeat;
 	padding-left: 24px;
-	background-position-y: -3px;
+	background-position-y: 4px;
+}
+.block2_button span{
+	border-bottom: 2px solid #000000;
+	display: inline-block;
+}
+.block2_button:hover span{
+	border-bottom: 2px solid #D0000F;
 }
 .advantages_block1::before{
 	content: url(../images/CH.svg);

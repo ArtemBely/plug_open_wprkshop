@@ -6,7 +6,6 @@ import SettleGrow from './SettleGrow';
 import Subscribe from './Subscribe';
 import Information from './Information';
 import Footer from './Footer';
-import TaxLegal from './TaxLegal';
 
 function Main(){
     return(
@@ -17,7 +16,6 @@ function Main(){
     		  <Subscribe />
     		  <Information />
     		  <Footer />
-			  <TaxLegal />
       </div>
     )
 }

@@ -2,6 +2,8 @@ import React from 'react';
 //@ts-ignore
 import growImage from '../../public/images/Group 131.png';
 //@ts-ignore
+import growImage2 from '../../public/images/one pager quantum leap strategy 1.png';
+//@ts-ignore
 import mountains from '../../public/images/mountains.png';
 
 
@@ -17,6 +19,12 @@ function SettleGrow(){
 				<div className='settleGrow_img'>
 					<img src={growImage} id='grow_img'/>
 					<a href='#' className='grow_download'>Download One Pager</a>
+				</div>
+				<div className='settleGrow_phone'>
+					<div className='settleGrow_img2'>
+						<img src={growImage2} id='grow_img2'/>
+					</div>
+					<p className='settleGrow_phone_text'>This document is dipiscing elit elementum nibh lacus amet magna commodo et facilisis. Tellus tellus arcu, nulla integer id.</p>
 				</div>
 				<div className='settleGrow_block'>
 					<h3 className='settleGrow_title'>Settle, grow and expand</h3>

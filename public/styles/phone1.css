@@ -131,37 +131,77 @@
 	.grow_download{
 		display: none;
 	}
+	.settleGrow_img{
+		display: none;
+	}
+	.settleGrow_phone{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	.settleGrow_phone_text{
+		font-size: 14px;
+		line-height: 22px;
+		color: #B8B8B8;
+		width: 156px;
+		margin: 10px 0 0 0;
+	}
 	/*Subscribe*/
-	.wrap_subscribe{
-		width:513px;
-		height: 460px;
-		border-radius: 10px;
+	.container_sub{
+		background: url(../images/Rectangle124.png) center no-repeat;
 		margin-top: 48px;
 	}
-	.subscribe_title{
-		width: 303px;
+	.wrap_subscribe{
+		display: none;
+	}
+	.wrap_subscribe_phone{
+		display: block;
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24)), url(../images/Rectangle127.png), #F3F3F3;
+		width: 513px;
+		height: 286px;	
+		margin: 38px 0;	
+	}
+	.subscribe_title_phone{
+		font-family: 'Montserrat-Bold';
+		width: 346px;
+		font-size: 40px;
+		line-height: 48px;
+		margin: 40px 132px 0px 35px;
+		color: #3D3D3D;
+	}
+	.subcribe_input_phone{
+		width: 238px;
 		font-size: 35px;
-		line-height: 42px;
-		margin: 184px 714px 20px 30px;
+		line-height: 49px;
+		font-family: 'Montserrat-Regular';
+		color: #3D3D3D;
+		border-bottom: 1px solid #3D3D3D;
+		padding: 0 0 8px 0;
+		outline: none;
+		background: none;
+		position: relative;
+		top: 33px;
+		margin: 0 0 0 35px;
+		border-top: none;
+    	border-right: none;
+    	border-left: none;
 	}
-	.subcribe_input{
-		width: 306px;
-		height: 65px;
-		padding: 31px;
-		margin-left: 30px;
-		font-size: 14px;
-		line-height: 22px;
-	}
-	.subcribe_button{
-		width: 88px;
-		height: 65px;
-		font-size: 14px;
-		line-height: 22px;
-	}
-	.subcribe_text{
-		width: 300px;
-		top: 0px;
-		margin-left: 30px;
+	.subcribe_button_phone{
+		width: 101px;
+		font-size: 35px;
+		line-height: 49px;
+		font-family: 'Montserrat-Regular';
+		color: #B8B8B8;
+		border-bottom: 1px solid #B8B8B8;
+		padding: 0 0 8px 0;
+		outline: none;
+		background: none;
+		position: relative;
+		top: 33px;
+		margin: 0 0 0 27px;
+		border-top: none;
+    	border-right: none;
+    	border-left: none;
 	}
 	/*Information*/
 	.wrap_information{

@@ -69,7 +69,7 @@
 	}
 	.mountains{
 		top: 54px;
-		left: -350px;
+		left: -150px;
 		height: 220px;
 	}
 	#mountains_img{
@@ -79,7 +79,7 @@
 	.wrap_settleGrow{
 		top: -85px;
 		width:290px;
-		height: 1180px;
+		height: 1230px;
 		grid-template-columns:290px;
 		grid-column-gap:0px;
 	}
@@ -119,6 +119,8 @@
 	.settleGrow_block{
 		grid-column: 1/2;
 		grid-row: 4/5;
+		position: relative;
+		top: -180px;
 	}
 	.grow_item1{
 		padding-top: 34px;
@@ -135,38 +137,80 @@
 	.grow_download{
 		display: none;
 	}
+	.settleGrow_img{
+		display: none;
+	}
+	.settleGrow_phone{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	.settleGrow_phone_text{
+		font-size: 14px;
+		line-height: 22px;
+		color: #B8B8B8;
+		position: relative;
+		width: 120px;
+    	margin: 0 0 0 198px;
+    	top: -255px;
+	}
 	/*Subscribe*/
-	.wrap_subscribe{
-		width:290px;
-		height: 205px;
-		border-radius: 10px;
+	.container_sub{
+		background: url(../images/Rectangle124.png) center no-repeat;
 		margin-top: 48px;
 	}
-	.subscribe_title{
-		width: 208px;
+	.wrap_subscribe{
+		display: none;
+	}
+	.wrap_subscribe_phone{
+		display: block;
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24)), url(../images/Rectangle127.png), #F3F3F3;
+		width: 290px;
+		height: 151px;
+		margin: 27px 0;	
+	}
+	.subscribe_title_phone{
+		font-family: 'Montserrat-Bold';
+		width: 192px;
 		font-size: 24px;
 		line-height: 31px;
-		margin: 20px 14px 20px 10px;
+		margin: 16px 0px 0px 35px;
+		width: 250px;
+		color: #3D3D3D;
 	}
-	.subcribe_input{
-		width: 200px;
-		height: 35px;
-		padding: 21px;
-		margin-left: 10px;
-		font-size: 14px;
-		line-height: 22px;
+	.subcribe_input_phone{
+		width: 113px;
+		font-size: 21px;
+		line-height: 26px;
+		font-family: 'Montserrat-Regular';
+		color: #3D3D3D;
+		border-bottom: 1px solid #3D3D3D;
+		padding: 0 0 9px 0;
+		outline: none;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		top: 10px;
+		position: relative;
+		background: none;
+		margin: 0 0 0 35px;
 	}
-	.subcribe_button{
-		width: 58px;
-		height: 45px;
-		font-size: 14px;
-		line-height: 22px;
-		margin-left: 10px;
-	}
-	.subcribe_text{
-		width: 300px;
-		top: 0px;
-		margin-left: 10px;
+	.subcribe_button_phone{
+		width: 60px;
+		font-size: 21px;
+		line-height: 26px;
+		font-family: 'Montserrat-Regular';
+		color: #B8B8B8;
+		border-bottom: 1px solid #B8B8B8;
+		padding: 0 0 9px 0;
+		outline: none;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		top: 10px;
+		position: relative;
+		margin: 0 0 0 19px;
+		background: none;
 	}
 	/*Information*/
 	.wrap_information{

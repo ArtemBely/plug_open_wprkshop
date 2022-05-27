@@ -63,5 +63,54 @@
 	.section_title3{
 		width: 164px;
 	}
+
+/*AMLcontrol*/
+	.wrap_amlControl{
+		width:690px;
+	}
+	#background_aml{
+		left: -350px;
+		width: 1220px;
+		height: 500px;
+	}
+	#logo_aml{
+		top: 50px;
+		left: 0px;
+		height: 450px;
+	}
+	.amlControl_subtitle{
+		width: 690px;
+	}
+	.amlControl_text{
+		width: 634px;
+		margin: 0 0 10px 0;
+	}
+	.amlControl_section1, .amlControl_section2,
+	.amlControl_section3, .amlControl_section4{
+		width: 690px;
+		padding: 21px 0 44px 28px;
+	}
+	.amlControl_section1{
+		height: 435px;
+	}
+	.amlControl_section2{
+		height: 223px;
+	}
+	.amlControl_section3{
+		height: 470px;
+	}
+	.amlControl_section4{
+		height: 1200px;
+	}
+	.amlControl_section5{
+		width: 690px;
+		height: 150px;
+	}
+	.aml_section_item{
+		margin: 25px 0 10px 0;
+	}
+	.aml_section_item2{
+		margin-top: 55px;
+	}
 }
 

@@ -35,5 +35,31 @@
 		height: 500px;
 	}
 
+/*AMLcontrol*/
+	.wrap_amlControl{
+		width:930px;
+	}
+	#background_aml{
+		left: -400px;
+		width: 1520px;
+		height: 500px;
+	}
+	#logo_aml{
+		left: 50px;
+		height: 450px;
+	}
+	.amlControl_subtitle{
+		width: 701px;
+	}
+	.amlControl_section1, .amlControl_section2,
+	.amlControl_section3, .amlControl_section4{
+		width: 930px;
+	}
+	.amlControl_section5{
+		width: 890px;
+	}
+	.amlControl_section5 .amlControl_text{
+		width: 890px;
+	}
 }
 

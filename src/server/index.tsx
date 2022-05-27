@@ -20,6 +20,13 @@ import regRouter from './routers/registration';
 import accountSw from './routers/accountSw';
 import taxesRouter from './routers/taxes';
 import amlRouter from './routers/aml';
+import companiesSw from './routers/companiesSw';
+import businessSw from './routers/businessSw';
+import about from './routers/about';
+import errorSw from './routers/error';
+import investmentStart from './routers/investmentStart';
+import development from './routers/development';
+import blog from './routers/blog';
 
 import chRouter from './routers/check';
 const app: Application = express();
@@ -84,6 +91,13 @@ app.use('/check', chRouter);
 app.use('/account_in_sw', accountSw);
 app.use('/taxes', taxesRouter);
 app.use('/aml_control', amlRouter);
+app.use('/swiss_companies_setup', companiesSw);
+app.use('/business_in_switzerland', businessSw);
+app.use('/about', about);
+app.use('/error', errorSw);
+app.use('/investment_club_start', investmentStart);
+app.use('/business_development', development);
+app.use('/blog', blog);
 
 app.get('*', (req: Request, res: Response, next: NextFunction) => {
   const activeRouter: any = Routes.find((route: any) => matchPath(req.url, route)) || {};

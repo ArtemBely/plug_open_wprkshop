@@ -39,7 +39,7 @@ class Footer extends Component<any>{
         <div className='container_footer'>
           <footer className='wrap_footer'>
             <div className='footer_logo'>
-              <img src={logo} id='footer_img'/>
+              <a href='#mainScreen'><img src={logo} id='footer_img'/></a>
                 </div>
                 <a href='#' className='footer_link link8' ref={this.capabilities}>Capabilities</a>
                 <a href='#' className='footer_link link9'>Business in Switzerland</a>

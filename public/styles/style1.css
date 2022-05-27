@@ -102,6 +102,7 @@ body {
 	background: #F3F3F3 url(../images/Rectangle\ 74.svg) left no-repeat;
 	border-bottom: 1.5px solid #D0000F;
 	background-position-y: 26px;
+	padding-bottom: 25px;
 }
 #nav{
 	top: 20px;
@@ -112,14 +113,13 @@ body {
 	opacity: 1 !important;
 }
 .submenu{
-	padding-top: 23px;
+	padding-top: 5px;
 	top: 45px;
 	margin-left: 25px;
 	height: 128px;
-	width: 213px;
+	width: 223px;
 	background: #F3F3F3;
 	position: absolute;
-	overflow: hidden;
 	transition:all 0.2s ease-in;
 }
 .hideMenu {
@@ -138,6 +138,45 @@ body {
 }
 .submenu_item:hover{
 	border-bottom:1.5px solid #D0000F;
+}
+.business_in_sw{
+	border-bottom: 1px dashed #B8B8B8;
+	background: url(../images/Rectangle\ 7.svg) right no-repeat;
+	padding-right: 17px;
+	background-position-y: 8px;
+	position: relative;
+	top: -20px;
+}
+.business_in_sw:hover{
+	background: url(../images/Rectangle\ 74.svg) right no-repeat;
+	background-position-y: 5px;
+}
+.submenu_2{
+	padding-top: 5px;
+	top: 10px;
+	margin-left: 100px;
+	height: 128px;
+	width: 240px;
+	background: #F3F3F3;
+	position: absolute;
+	overflow: hidden;
+	transition:all 0.2s ease-in;
+}
+.hideMenu2 {
+	height: 0;
+	opacity: 0;
+}
+.submenu_tax{
+	display: block;
+	width: 106px;
+}
+#nav_2{
+	top: 20px;
+	position: relative;
+}
+#nav_2:hover .hideMenu2 {
+	height: 128px !important;
+	opacity: 1 !important;
 }
 .link2{
 	-ms-grid-column: 3;
