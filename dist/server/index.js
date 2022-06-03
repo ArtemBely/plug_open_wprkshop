@@ -24,6 +24,7 @@ import errorSw from './routers/error';
 import investmentStart from './routers/investmentStart';
 import development from './routers/development';
 import blog from './routers/blog';
+import emTech from './routers/emTech';
 import chRouter from './routers/check';
 const app = express();
 const CONNECTION_URI = process.env.MONGODB_URI;
@@ -83,6 +84,7 @@ app.use('/error', errorSw);
 app.use('/investment_club_start', investmentStart);
 app.use('/business_development', development);
 app.use('/blog', blog);
+app.use('/emtech_in_davos', emTech);
 app.get('*', (req, res, next) => {
     const activeRouter = Routes.find((route) => matchPath(req.url, route)) || {};
     const promise = activeRouter.fetchInitialData ?

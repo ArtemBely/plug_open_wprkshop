@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 //@ts-ignore
 import logo from '../../public/images/Union.svg';
 //@ts-ignore
@@ -40,23 +41,43 @@ class Footer extends Component<any>{
           <footer className='wrap_footer'>
             <div className='footer_logo'>
               <a href='#mainScreen'><img src={logo} id='footer_img'/></a>
-                </div>
+            </div>
                 <a href='#' className='footer_link link8' ref={this.capabilities}>Capabilities</a>
-                <a href='#' className='footer_link link9'>Business in Switzerland</a>
-                <a href='#' className='footer_link link10'>Business development</a>
-                <a href='#' className='footer_link link11'>EmTech in Davos</a>
-                <a href='#' className='footer_link link12'>Investment Club</a>
+                <NavLink to='/business_in_switzerland' className='footer_link link9'>Business in Switzerland</NavLink>
+                <NavLink to='/business_development' className='footer_link link10'>Business development</NavLink>
+                <NavLink to='/emtech_in_davos' className='footer_link link11'>EmTech in Davos</NavLink>
+                <NavLink to='/investment_club_start' className='footer_link link12'>Investment Club</NavLink>
 
                 <a href='#' className='footer_link link13'>About</a>
-                <a href='#' className='footer_link link14'>Team</a>
-                <a href='#' className='footer_link link15'>Address</a>
-                <a href='#' className='footer_link link16'>Contact</a>
+                <NavLink to='/about' className='footer_link link14'>Team</NavLink>
+                <NavLink to='/about' className='footer_link link15'>Address</NavLink>
+                <NavLink to='/about' className='footer_link link16'>Contact</NavLink>
 
                 <a href='41792695360' className='footer_link phone2'>+41 79 269 53 60</a>
-                <a href='#' className='footer_link link18'>Join us</a>
-                <a href='#' className='footer_link language2'>En</a>
 
-                <img src={trigon} id='footer_trigon'/>
+					 <div className='nav_join2'>
+							<div className='menu_join2'>
+							<a href='#' className='footer_link link18'>Join us</a>
+								<div className='submenu_join2 hideMenu4'>
+									<input type="text" className='input_join2' name="useremail" placeholder="Email"/>
+									<button className="button_join2" type="submit">Apply</button>
+								</div>
+							</div>
+						</div>
+                
+					 <div className='nav_language2'>
+							<div className='menu_language2'>
+								<a href='#' className='footer_link language2'>En</a>
+								<div className='submenu_language2 hideMenu4'>
+									<a href="#" className='submenu_language_item2'>Ru</a>
+									<a href="#" className='submenu_language_item2'>De</a>
+									<a href="#" className='submenu_language_item2'>Tk</a>
+									<a href="#" className='submenu_language_item2'>Uz</a>
+								</div>
+							</div>
+						</div>
+
+                <a href='#' className='trigon_footer'><div id='footer_trigon'></div></a>
 
                 <div className='footer_contacts'>
                   <a href='#'><img src={social1} className='social_link' id='social1'/></a>

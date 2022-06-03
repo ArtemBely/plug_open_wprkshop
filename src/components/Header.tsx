@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 //@ts-ignore
 import logo from '../../public/images/Union.svg';
 
@@ -35,26 +36,48 @@ render() {
 								<div className="submenu hideMenu" ref={this.sub}>
 									<div id='nav_2'>
 										<div className='menu_item2'>
-											<a href='#' className="submenu_item business_in_sw">Business in Switzerland</a>
+											<NavLink to='/business_in_switzerland' className="submenu_item business_in_sw">Business in Switzerland</NavLink>
 											<div className='submenu_2 hideMenu2'>
-												<a href="#" className='submenu_item'>Swiss Companies Setup</a>
-												<a href="#" className='submenu_item'>Bank account in Switzerland</a>
-												<a href="#" className='submenu_item'>AML control</a>
-												<a href="#" className='submenu_item submenu_tax'>Tax and Legal</a>
+												<NavLink to='/swiss_companies_setup' className='submenu_item'>Swiss Companies Setup</NavLink>
+												<NavLink to='/account_in_sw' className='submenu_item'>Bank account in Switzerland</NavLink>
+												<NavLink to='/aml_control' className='submenu_item'>AML control</NavLink>
+												<NavLink to='/taxes' className='submenu_item submenu_tax'>Tax and Legal</NavLink>
 											</div>
 										</div>
 									</div>
 									
-									<a href='#' className="submenu_item">Business development</a>
-									<a href='#' className="submenu_item">EmTech in Davos</a>
-									<a href='#' className="submenu_item">Investment Club</a>
+									<NavLink to='/business_development' className="submenu_item">Business development</NavLink>
+									<NavLink to='/emtech_in_davos' className="submenu_item">EmTech in Davos</NavLink>
+									<NavLink to='/investment_club_start' className="submenu_item">Investment Club</NavLink>
 								</div>
 							</div>
 						</div>
-						<a href='#' className='header_link link2'>About</a>
+						<NavLink to='/about' className='header_link link2'>About</NavLink>
 						<a href='41792695360' className='header_link phone'>+41 79 269 53 60</a>
-						<a href='#' className='header_link link3'>Join us</a>
-						<a href='#' className='header_link language'>En</a>
+
+						<div className='nav_join'>
+							<div className='menu_join'>
+								<a href='#' className='header_link link3'>Join us</a>
+								<div className='submenu_join hideMenu3'>
+									<input type="text" className='input_join' name="useremail" placeholder="Email"/>
+									<button className="button_join" type="submit">Apply</button>
+								</div>
+							</div>
+						</div>
+						
+						<div className='nav_language'>
+							<div className='menu_language'>
+								<a href='#' className='header_link language'>En</a>
+								<div className='submenu_language hideMenu4'>
+									<a href="#" className='submenu_language_item'>Ru</a>
+									<a href="#" className='submenu_language_item'>De</a>
+									<a href="#" className='submenu_language_item'>Tk</a>
+									<a href="#" className='submenu_language_item'>Uz</a>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			)
