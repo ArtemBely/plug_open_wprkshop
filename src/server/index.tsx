@@ -154,4 +154,4 @@ app.use((req: Request, res: Response, next: NextFunction) => {  //<-- замен
 });
 
 
-app.listen(8080, () => {console.log('Server started!')});
+app.listen(8888, () => {console.log('Server started!')});
