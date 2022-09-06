@@ -1,0 +1,72 @@
+@media (min-width: 320px) and (max-width: 567px) {
+  .wrap_gus {
+    margin-top: 60px;
+        height: 1358px;
+  }
+  body {
+    -moz-transform: scale(1, 1); /* Moz-browsers */
+    zoom: 1; /* Other non-webkit browsers */
+    zoom: 100%; /* Webkit browsers */
+  }
+  .gus {
+    width: 320px;
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 120%;
+    font-family: 'Inter-Bold';
+    margin-top: 67px;
+    width: 320px;
+    margin-bottom: 0px;
+  }
+  .text, .each_contact {
+    font-size: 17px;
+    line-height: 30px;
+    width: 320px;
+}
+.prof {
+    width: 320px;
+}
+.wrap_contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 208px;
+    width: 320px;
+    position: relative;
+    top: -125px;
+        z-index: 1;
+}
+#post {
+      grid-row: 2 / 3;
+}
+.each_icon {
+      top: 6px;
+}
+.wrap_fone {
+  position: relative;
+  top: -616px;
+}
+.down_street {
+  width: 242px;
+}
+#fone {
+  width: 931px;
+  bottom: auto;
+  position: absolute;
+}
+#street, #house {
+display: none;
+}
+.hidden_contact {
+  display: block;
+  width: 221px;
+  position: relative;
+  top: 20px;
+}
+.wrap_elements {
+  zoom: 100% !important;
+  padding: 0px !important;
+  overflow: inherit !important;
+}
+}
