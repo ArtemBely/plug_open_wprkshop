@@ -14,12 +14,24 @@ import mongoose from 'mongoose';
 import passport from 'passport';
 import flash from 'connect-flash';
 import Error from '../interfaces/Error';
+import http from 'http';
+import https from 'https';
+import path from 'path';
+import fs from 'fs';
 
 const app: Application = express();
 const CONNECTION_URI: any = process.env.MONGODB_URI;
 //const port = process.env.PORT || 5000;
 
 require('dotenv/config');
+
+var privateKey = fs.readFileSync(path.resolve('src/server/ssl/openworkshops.key'));
+var certificate = fs.readFileSync(path.resolve('src/server/ssl/openworkshops.pem'));
+
+var credentials = {
+  key: privateKey,
+  cert: certificate
+}
 
 mongoose.connect(
   CONNECTION_URI || process.env.CONNECT,
@@ -112,4 +124,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {  //<-- замен
 });
 
 
-app.listen(8888, () => {console.log('Server started!')});
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(8080, () => {console.log('connected on http!')});  // --> localhost test mode
+httpsServer.listen(443, () => {console.log('connected on https!')});
